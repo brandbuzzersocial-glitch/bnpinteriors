@@ -1,5 +1,5 @@
 /* ============================================================
-   ANTRA – Dynamic Strapi CMS Integration API Layer
+   BNP INTERIORS – Dynamic Strapi CMS Integration API Layer
    ============================================================ */
 
 const STRAPI_BASE_URL = window.STRAPI_URL || 'http://localhost:1337';

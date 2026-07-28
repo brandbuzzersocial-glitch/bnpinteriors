@@ -3,18 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Antra – Architecture & Interior Design</title>
-  <meta name="description" content="Antra is a refined WordPress theme designed for architecture firms and interior design studios that value aesthetics and functionality.">
+  <title>BNP Interiors – Architecture & Interior Design</title>
+  <meta name="description" content="BNP Interiors is a premier interior architecture studio specializing in high-end residential, commercial, and landscape design.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ArchitecturalFirm",
+    "name": "BNP Interiors",
+    "url": "http://localhost:8080",
+    "logo": "http://localhost:8080/assets/images/bnp-logo.png",
+    "image": "http://localhost:8080/assets/images/h1-slider1.jpg",
+    "description": "BNP Interiors is a premier architectural and interior design studio specializing in luxury residential, commercial, and landscape design.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5609 E Sprague Ave",
+      "addressLocality": "Spokane Valley",
+      "addressRegion": "WA",
+      "postalCode": "99212",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-480-123-6789"
+  }
+  </script>
 </head>
 <body>
   <!-- PAGE LOADER -->
   <div class="page-loader" id="page-loader">
     <div class="loader-inner">
-      <div class="loader-logo">ANTRA</div>
+      <div class="loader-logo" style="display:flex;align-items:center;justify-content:center"><img src="assets/images/bnp-logo.png" alt="BNP Interiors" style="height:55px;width:auto"></div>
       <div class="loader-bar"><div class="loader-bar-fill"></div></div>
     </div>
   </div>
@@ -23,8 +43,7 @@
   <header class="site-header" id="site-header">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/logo.svg" alt="Antra Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-        <span class="logo-text" style="display:none">ANTRA</span>
+        <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:36px;width:auto">
       </a>
       <nav class="main-nav" id="main-nav">
         <ul>
@@ -38,11 +57,6 @@
         </ul>
       </nav>
       <div class="header-actions">
-        <a href="tel:+4801236789" class="header-phone">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-          (+480) 123 678 900
-        </a>
-        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
@@ -173,6 +187,75 @@
               <span class="badge-text">Completed Projects Worldwide</span>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE DESIGN SERVICES (MATCHING REFERENCE SCREENSHOT) -->
+  <section class="section sketch-bg sketch-bg-both blueprint-grid-bg" style="background: #faf9f6;">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-bottom: 20px; flex-wrap: wrap;">
+        <div data-anim="fadeRight">
+          <span class="section-tag">WHO WE ARE</span>
+          <h2 class="section-title" style="font-size: clamp(2.4rem, 4.5vw, 3.8rem);">
+            Experience <em>The Art Of</em> Interior<br>Design
+          </h2>
+        </div>
+        <div data-anim="fadeLeft" style="max-width: 520px; padding-top: 24px;">
+          <p class="section-desc" style="font-size: 0.95rem; line-height: 1.8;">
+            We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision.
+          </p>
+        </div>
+      </div>
+
+      <div class="core-services-grid" data-anim-stagger>
+        <!-- CARD 1 -->
+        <div class="core-service-card">
+          <div class="core-service-card-header">
+            <h3>Architectural<br>Design</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="5" y="5" width="40" height="40" rx="4" />
+              <path d="M5 25h40M25 5v40M5 5l40 40M45 5L5 45" />
+            </svg>
+          </div>
+          <p>Dream it, we'll design it! From big picture layouts to the tiniest details, our architectural magic brings your ideas to life with creativity and precision!</p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="core-service-card">
+          <div class="core-service-card-header">
+            <h3>Interior Design &<br>Planning</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M10 25c0-8.28 6.72-15 15-15s15 6.72 15 15-6.72 15-15 15" />
+              <path d="M25 10c0 8.28-6.72 15-15 15s6.72 15 15 15 15-6.72 15-15" />
+            </svg>
+          </div>
+          <p>Make your space shine! Our team creates inviting, beautiful interiors that reflect your style and make every room a favorite place to be.</p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="core-service-card">
+          <div class="core-service-card-header">
+            <h3>Consulting<br>Services</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="10" y="10" width="30" height="30" transform="rotate(45 25 25)" />
+              <path d="M25 5v40M5 25h40" />
+            </svg>
+          </div>
+          <p>Consider us your design whisperers! We provide expert advice to help your project sparkle with creativity, efficiency, and spot-on solutions.</p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="core-service-card">
+          <div class="core-service-card-header">
+            <h3>Project<br>Management</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M10 15h30M10 25h30M10 35h30" />
+              <path d="M15 10a10 10 0 0120 0M15 20a10 10 0 0120 0" />
+            </svg>
+          </div>
+          <p>We handle the hustle! From start to finish, we keep your project on track, on budget, and stress-free - so you can sit back and watch the magic happen.</p>
         </div>
       </div>
     </div>
@@ -524,7 +607,7 @@
         <!-- TESTIMONIAL 1 -->
         <div class="testimonial-card active">
           <div class="testimonial-quote">“</div>
-          <p class="testimonial-text">"Working with Antra was an effortless experience from day one. They captured our vision for our penthouse completely and delivered spatial solutions we hadn't even imagined. The craftsmanship is flawless."</p>
+          <p class="testimonial-text">"Working with BNP Interiors was an effortless experience from day one. They captured our vision for our penthouse completely and delivered spatial solutions we hadn't even imagined. The craftsmanship is flawless."</p>
           <div class="testimonial-author">
             <img src="assets/images/testimonials-1.jpg" alt="Marcus Vance" loading="lazy">
             <div>
@@ -538,7 +621,7 @@
         <!-- TESTIMONIAL 2 -->
         <div class="testimonial-card">
           <div class="testimonial-quote">“</div>
-          <p class="testimonial-text">"Antra converted our historic office building into a state-of-the-art flexible workspace. Their attention to lighting detail and acoustic dampening elevated the whole company's productivity."</p>
+          <p class="testimonial-text">"BNP Interiors converted our historic office building into a state-of-the-art flexible workspace. Their attention to lighting detail and acoustic dampening elevated the whole company's productivity."</p>
           <div class="testimonial-author">
             <img src="assets/images/team-1.jpg" alt="Elena Rostova" loading="lazy">
             <div>
@@ -665,7 +748,7 @@
             <span class="blog-cat">Design Trends</span>
           </div>
           <div class="blog-body">
-            <span class="blog-meta">June 15, 2025 · By Antra Studio</span>
+            <span class="blog-meta">June 15, 2025 · By BNP Interiors Studio</span>
             <h3><a href="blog.html">Functional Design Trends That Blend Style and Comfort</a></h3>
             <p>Discover how modern architectural concepts prioritize natural lighting and organic materials to craft restful living spaces.</p>
             <a href="blog.html" class="read-more">Read Article →</a>
@@ -678,7 +761,7 @@
             <span class="blog-cat">Lighting</span>
           </div>
           <div class="blog-body">
-            <span class="blog-meta">June 12, 2025 · By Antra Studio</span>
+            <span class="blog-meta">June 12, 2025 · By BNP Interiors Studio</span>
             <h3><a href="blog.html">Innovative Lighting Ideas to Refresh Your Living Space</a></h3>
             <p>Smart ambient lighting techniques that visually expand compact rooms and highlight architectural accents seamlessly.</p>
             <a href="blog.html" class="read-more">Read Article →</a>
@@ -691,7 +774,7 @@
             <span class="blog-cat">Interior Tips</span>
           </div>
           <div class="blog-body">
-            <span class="blog-meta">June 10, 2025 · By Antra Studio</span>
+            <span class="blog-meta">June 10, 2025 · By BNP Interiors Studio</span>
             <h3><a href="blog.html">Transform Your Home With Modern Minimalist Concepts</a></h3>
             <p>Key strategies for decluttering aesthetics while maintaining warmth, depth, and practical daily utility.</p>
             <a href="blog.html" class="read-more">Read Article →</a>
@@ -725,22 +808,22 @@
   <section class="gallery-strip">
     <div class="gallery-strip-inner">
       <div class="gallery-strip-item">
-        <img src="assets/images/gallery-1.jpg" alt="Antra Portfolio Detail 1" loading="lazy">
+        <img src="assets/images/gallery-1.jpg" alt="BNP Interiors Portfolio Detail 1" loading="lazy">
       </div>
       <div class="gallery-strip-item">
-        <img src="assets/images/gallery-3.jpg" alt="Antra Portfolio Detail 2" loading="lazy">
+        <img src="assets/images/gallery-3.jpg" alt="BNP Interiors Portfolio Detail 2" loading="lazy">
       </div>
       <div class="gallery-strip-item">
-        <img src="assets/images/gallery-4.jpg" alt="Antra Portfolio Detail 3" loading="lazy">
+        <img src="assets/images/gallery-4.jpg" alt="BNP Interiors Portfolio Detail 3" loading="lazy">
       </div>
       <div class="gallery-strip-item">
-        <img src="assets/images/gallery-6.jpg" alt="Antra Portfolio Detail 4" loading="lazy">
+        <img src="assets/images/gallery-6.jpg" alt="BNP Interiors Portfolio Detail 4" loading="lazy">
       </div>
       <div class="gallery-strip-item">
-        <img src="assets/images/gallery-7.jpg" alt="Antra Portfolio Detail 5" loading="lazy">
+        <img src="assets/images/gallery-7.jpg" alt="BNP Interiors Portfolio Detail 5" loading="lazy">
       </div>
       <div class="gallery-strip-item">
-        <img src="assets/images/gallery-9.jpg" alt="Antra Portfolio Detail 6" loading="lazy">
+        <img src="assets/images/gallery-9.jpg" alt="BNP Interiors Portfolio Detail 6" loading="lazy">
       </div>
     </div>
   </section>
@@ -752,8 +835,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="footer-logo">
-            <img src="assets/images/logo.svg" alt="Antra" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-            <span style="display:none;font-size:2rem;font-family:'Cal Sans',sans-serif;color:#fff">ANTRA</span>
+            <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:44px;width:auto">
           </a>
           <p>We transform your vision into beautifully crafted spaces. Timeless design, delivered with precision and perfection.</p>
           <div class="footer-social">
@@ -798,7 +880,7 @@
             </li>
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              info@antra-design.com
+              info@bnpinteriors.com
             </li>
           </ul>
         </div>
@@ -816,7 +898,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2025 Antra. All rights reserved. Designed by Themelexus</p>
+        <p>© 2025 BNP Interiors. All rights reserved. Designed by BNP Interiors</p>
         <div class="footer-bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>

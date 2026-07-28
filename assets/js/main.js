@@ -1,5 +1,5 @@
 /* ============================================================
-   ANTRA – Architecture & Interior Design
+   BNP INTERIORS – Architecture & Interior Design
    Enhanced JavaScript: Animations, Scroll Effects & Micro-Interactions
    ============================================================ */
 

@@ -1,5 +1,5 @@
 /* ============================================================
-   ANTRA – Architecture & Interior Design
+   BNP INTERIORS – Architecture & Interior Design
    Exact Theme Colors & Fonts from demo2.themelexus.com/antra/
    ============================================================ */
 
@@ -1711,8 +1711,75 @@ h6 { font-size: 1.25rem; }
 .skill-bar-fill.animate { width: var(--width); }
 
 /* ============================================================
-   PROJECTS PAGE
+   CORE DESIGN SERVICES CARDS (Matching Reference Screenshot)
    ============================================================ */
+.core-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 55px;
+}
+
+.core-service-card {
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: 38px 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 330px;
+  position: relative;
+  transition: all 0.4s var(--ease-out);
+  border: 1px solid rgba(227, 227, 232, 0.6);
+}
+
+.core-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.09);
+  border-color: var(--color-primary);
+}
+
+.core-service-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.core-service-card h3 {
+  font-size: 1.45rem;
+  line-height: 1.22;
+  color: var(--color-secondary);
+  margin: 0;
+  font-family: var(--font-heading);
+}
+
+.core-service-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.core-service-card p {
+  font-size: 0.88rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin: 0;
+  border-top: 1px solid var(--color-border);
+  padding-top: 24px;
+}
+
+@media (max-width: 1100px) {
+  .core-services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .core-services-grid { grid-template-columns: 1fr; }
+}
+
 .projects-grid-full { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 
 /* ============================================================
