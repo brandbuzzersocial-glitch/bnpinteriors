@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BNP Interiors – Architecture & Interior Design</title>
-  <meta name="description" content="BNP Interiors is a premier interior architecture studio specializing in high-end residential, commercial, and landscape design.">
+  <title>BNP Interiors – Turnkey Civil & Interior Contracting Since 2006</title>
+  <meta name="description" content="BNP Interiors is one of India's leading civil and interior turnkey contracting firms with 700+ projects completed across hospitality, commercial, and high-end residential sectors.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,19 +14,18 @@
     "@context": "https://schema.org",
     "@type": "ArchitecturalFirm",
     "name": "BNP Interiors",
-    "url": "http://localhost:8080",
-    "logo": "http://localhost:8080/assets/images/bnp-logo.png",
-    "image": "http://localhost:8080/assets/images/h1-slider1.jpg",
-    "description": "BNP Interiors is a premier architectural and interior design studio specializing in luxury residential, commercial, and landscape design.",
+    "url": "http://localhost:3000",
+    "logo": "http://localhost:3000/assets/images/bnp-logo.png",
+    "description": "BNP Interiors is one of India's leading civil and interior turnkey contracting firms, founded in 2006 by Mr. Punamchand Kularia and led by Punam D. Kularia.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "5609 E Sprague Ave",
-      "addressLocality": "Spokane Valley",
-      "addressRegion": "WA",
-      "postalCode": "99212",
-      "addressCountry": "US"
+      "streetAddress": "519–520, Laxmi Industrial Estate, Laxmi Mall, New Link Road, Andheri (W)",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400053",
+      "addressCountry": "IN"
     },
-    "telephone": "+1-480-123-6789"
+    "telephone": "+91-98213-10554"
   }
   </script>
 </head>
@@ -48,15 +47,16 @@
       <nav class="main-nav" id="main-nav">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html" class="">About Us</a></li>
+          <li><a href="services.html" class="">Services</a></li>
+          <li><a href="projects.html" class="">Projects</a></li>
+          <li><a href="team.html" class="">Our Team</a></li>
+          <li><a href="blog.html" class="">Blog</a></li>
+          <li><a href="contact.html" class="">Contact Us</a></li>
         </ul>
       </nav>
       <div class="header-actions">
+        
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
@@ -72,11 +72,11 @@
         <div class="hero-overlay"></div>
         <div class="container">
           <div class="hero-content">
-            <span class="hero-tag">ARCHITECTURE & INTERIOR DESIGN</span>
-            <h1 class="hero-title">Shaping <em>Spaces</em> That Elevate Living</h1>
-            <p class="hero-subtitle">We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision.</p>
+            <span class="hero-tag">TURNKEY CONTRACTING EXCELLENCE</span>
+            <h1 class="hero-title">Turnkey <em>Excellence</em>. Since 2006.</h1>
+            <p class="hero-subtitle">From concept to handover, BNP Interiors delivers civil and interior turnkey solutions for India's leading hospitality, commercial, and residential addresses.</p>
             <div class="hero-actions">
-              <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+              <a href="projects.html" class="btn btn-primary">Explore Our Projects →</a>
               <a href="services.html" class="btn btn-outline-light">Our Services</a>
             </div>
           </div>
@@ -87,11 +87,11 @@
         <div class="hero-overlay"></div>
         <div class="container">
           <div class="hero-content">
-            <span class="hero-tag">MODERN LUXURY & INNOVATION</span>
-            <h1 class="hero-title">Crafting <em>Timeless</em> Architectural Concepts</h1>
-            <p class="hero-subtitle">From sleek residential interiors to bold commercial complexes, we blend functionality with stunning aesthetic beauty.</p>
+            <span class="hero-tag">CRAFTED IN-HOUSE</span>
+            <h1 class="hero-title">Crafted <em>In-House</em>. Delivered Nationwide.</h1>
+            <p class="hero-subtitle">Powered by German and Italian precision machinery at our Navi Mumbai facility, every piece of furniture we build leaves factory-finished — ready to assemble on site.</p>
             <div class="hero-actions">
-              <a href="contact.html" class="btn btn-primary">Start a Project</a>
+              <a href="services.html#manufacturing" class="btn btn-primary">See Our Manufacturing →</a>
               <a href="projects.html" class="btn btn-outline-light">View Portfolio</a>
             </div>
           </div>
@@ -103,38 +103,18 @@
     <button class="hero-arrow hero-prev" id="hero-prev" aria-label="Previous slide">‹</button>
     <button class="hero-arrow hero-next" id="hero-next" aria-label="Next slide">›</button>
 
-    <!-- Hero Dots -->
     <div class="hero-dots">
       <div class="hero-dot active" data-slide="0"></div>
       <div class="hero-dot" data-slide="1"></div>
     </div>
 
-    <!-- Scroll Indicator -->
     <div class="hero-scroll">
       <span>Scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- BANNER STRIP -->
-  <section class="banner-strip">
-    <div class="banner-strip-inner">
-      <div class="strip-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 3a8 8 0 018 7.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span>5609 E Sprague Ave, Spokane Valley, WA</span>
-      </div>
-      <span class="strip-divider">•</span>
-      <div class="strip-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-        <span>(+480) 123 678 900</span>
-      </div>
-      <span class="strip-divider">•</span>
-      <div class="strip-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- ABOUT SECTION -->
   <section class="section sketch-bg sketch-bg-1 blueprint-grid-bg">
@@ -142,21 +122,21 @@
       <div class="about-grid">
         <div class="about-images" data-anim="fadeRight">
           <div class="about-img-main">
-            <img src="assets/images/h1-banner01.jpg" alt="Interior Design Showcase" loading="lazy">
+            <img src="assets/images/h1-banner01.jpg" alt="BNP Interiors Craftsmanship" loading="lazy">
           </div>
           <div class="about-img-badge">
-            <img src="assets/images/h1-slider1-280x300.jpg" alt="Badge Detail" loading="lazy">
+            <img src="assets/images/h1-slider1-280x300.jpg" alt="Interior Detail" loading="lazy">
           </div>
           <div class="about-stat-card">
-            <span class="stat-num">32+</span>
+            <span class="stat-num">20+</span>
             <span class="stat-label">Years of<br>Excellence</span>
           </div>
         </div>
 
         <div class="about-content" data-anim="fadeLeft">
           <span class="section-tag">WHO WE ARE</span>
-          <h2 class="section-title">Experience <em>The Art Of</em> Interior Design</h2>
-          <p class="section-desc">We encourage clients to actively participate in discussions, share their ideas, preferences, and feedback. Your input is invaluable to creating spaces that truly reflect your vision.</p>
+          <h2 class="section-title">India's Premier <em>Turnkey Contracting</em> & Interior Studio</h2>
+          <p class="section-desc">BNP Interiors was founded in 2006 by visionary entrepreneur <strong>Mr. Punamchand Kularia</strong>. In just over 18 years, the company has carved a niche in high-end interiors for the hospitality, commercial, and private sectors — built on an unwavering commitment to integrity and transparency. Today, under the leadership of <strong>Punam D. Kularia, Founder & Managing Director</strong>, BNP Interiors is one of India's leading civil and interior turnkey contracting firms, with over 60% of its business coming from repeat clients.</p>
 
           <div class="about-features" data-anim-stagger>
             <div class="feature-item">
@@ -164,8 +144,8 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
               </div>
               <div class="feature-text">
-                <h3>Interior Architecture & Spatial Design</h3>
-                <p>Creating harmonious spaces that optimize room flow, natural light, and structural harmony tailored to your daily life.</p>
+                <h3>Complete Turnkey Execution</h3>
+                <p>Civil + Interiors executed under one contract for seamless project delivery and budget optimization.</p>
               </div>
             </div>
 
@@ -174,17 +154,17 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
               </div>
               <div class="feature-text">
-                <h3>Smart Home Integration & Lighting</h3>
-                <p>Combining modern technology with bespoke lighting concepts to deliver sustainable and intelligent home environments.</p>
+                <h3>In-House Furniture Manufacturing</h3>
+                <p>State-of-the-art Navi Mumbai facility equipped with HOMAG (Germany) machinery for factory-finished precision.</p>
               </div>
             </div>
           </div>
 
           <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
-            <a href="services.html" class="btn btn-primary">Discover Services</a>
+            <a href="about.html" class="btn btn-primary">Discover Our Journey</a>
             <div class="experience-badge">
-              <span class="badge-num">250+</span>
-              <span class="badge-text">Completed Projects Worldwide</span>
+              <span class="badge-num">700+</span>
+              <span class="badge-text">Completed Projects Across India</span>
             </div>
           </div>
         </div>
@@ -192,241 +172,98 @@
     </div>
   </section>
 
-  <!-- CORE DESIGN SERVICES (MATCHING REFERENCE SCREENSHOT) -->
+  <!-- CORE DESIGN SERVICES -->
   <section class="section sketch-bg sketch-bg-both blueprint-grid-bg" style="background: #faf9f6;">
     <div class="container">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-bottom: 20px; flex-wrap: wrap;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-bottom: 30px; flex-wrap: wrap;">
         <div data-anim="fadeRight">
-          <span class="section-tag">WHO WE ARE</span>
-          <h2 class="section-title" style="font-size: clamp(2.4rem, 4.5vw, 3.8rem);">
-            Experience <em>The Art Of</em> Interior<br>Design
+          <span class="section-tag">WHAT WE DO</span>
+          <h2 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.2rem);">
+            Our Turnkey Services &<br>Execution Verticals
           </h2>
         </div>
         <div data-anim="fadeLeft" style="max-width: 520px; padding-top: 24px;">
-          <p class="section-desc" style="font-size: 0.95rem; line-height: 1.8;">
-            We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision.
+          <p class="section-desc" style="font-size: 0.95rem; line-height: 1.6;">
+            We deliver complete end-to-end civil execution, interior fit-outs, and bespoke furniture manufacturing powered by our in-house ERP system.
           </p>
         </div>
       </div>
 
       <div class="core-services-grid" data-anim-stagger>
-        <!-- CARD 1 -->
         <div class="core-service-card">
           <div class="core-service-card-header">
-            <h3>Architectural<br>Design</h3>
-            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
-              <rect x="5" y="5" width="40" height="40" rx="4" />
-              <path d="M5 25h40M25 5v40M5 5l40 40M45 5L5 45" />
-            </svg>
+            <h3>Hospitality<br>Interiors</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="10" y="10" width="30" height="30" rx="4"/><path d="M10 25h30M25 10v30"/></svg>
           </div>
-          <p>Dream it, we'll design it! From big picture layouts to the tiniest details, our architectural magic brings your ideas to life with creativity and precision!</p>
+          <p>Guest rooms, lobbies, ballrooms, restaurants, and spas for luxury hotel brands including Taj, Marriott, Hyatt, Radisson, Accor, and IHG.</p>
         </div>
 
-        <!-- CARD 2 -->
         <div class="core-service-card">
           <div class="core-service-card-header">
-            <h3>Interior Design &<br>Planning</h3>
-            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M10 25c0-8.28 6.72-15 15-15s15 6.72 15 15-6.72 15-15 15" />
-              <path d="M25 10c0 8.28-6.72 15-15 15s6.72 15 15 15 15-6.72 15-15" />
-            </svg>
+            <h3>Commercial &<br>Corporate</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 40V10h30v30M18 18h4M28 18h4M18 26h4M28 26h4"/></svg>
           </div>
-          <p>Make your space shine! Our team creates inviting, beautiful interiors that reflect your style and make every room a favorite place to be.</p>
+          <p>Head offices, banking floors, and workplace fit-outs for BFSI, IT, and media clients including HDFC Bank, Citibank, BNP Paribas, and PwC.</p>
         </div>
 
-        <!-- CARD 3 -->
         <div class="core-service-card">
           <div class="core-service-card-header">
-            <h3>Consulting<br>Services</h3>
-            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
-              <rect x="10" y="10" width="30" height="30" transform="rotate(45 25 25)" />
-              <path d="M25 5v40M5 25h40" />
-            </svg>
+            <h3>Civil & MEP<br>Turnkey</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="10" y="10" width="30" height="30" transform="rotate(45 25 25)"/></svg>
           </div>
-          <p>Consider us your design whisperers! We provide expert advice to help your project sparkle with creativity, efficiency, and spot-on solutions.</p>
+          <p>Structural civil works, MEP coordination, and site execution managed end-to-end through our in-house ERP system.</p>
         </div>
 
-        <!-- CARD 4 -->
         <div class="core-service-card">
           <div class="core-service-card-header">
-            <h3>Project<br>Management</h3>
-            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M10 15h30M10 25h30M10 35h30" />
-              <path d="M15 10a10 10 0 0120 0M15 20a10 10 0 0120 0" />
-            </svg>
+            <h3>Bespoke Furniture<br>Manufacturing</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 15h30M10 25h30M10 35h30"/></svg>
           </div>
-          <p>We handle the hustle! From start to finish, we keep your project on track, on budget, and stress-free - so you can sit back and watch the magic happen.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES SECTION (Tabs) -->
-  <section class="section services-section sketch-bg sketch-bg-2">
-    <div class="container">
-      <div class="section-header centered" data-anim="fadeUp">
-        <span class="section-tag">WHAT WE DO</span>
-        <h2 class="section-title">Explore our core design services</h2>
-        <p class="section-desc">From initial 2D space planning to photorealistic 3D visualization and turnkey project execution.</p>
-      </div>
-
-      <div class="services-tabs" data-anim="fadeUp" data-delay="100">
-        <!-- TAB BUTTONS -->
-        <div class="services-tab-nav" id="services-tab-nav">
-          <button class="tab-btn active" data-tab="0">Residential Design</button>
-          <button class="tab-btn" data-tab="1">Outdoor & Landscape</button>
-          <button class="tab-btn" data-tab="2">Design Consultation</button>
-          <button class="tab-btn" data-tab="3">Commercial Spaces</button>
-          <button class="tab-btn" data-tab="4">Renovation & Remodel</button>
-          <button class="tab-btn" data-tab="5">2D/3D Visualization</button>
+          <p>HOMAG (Germany) equipped Navi Mumbai facility producing factory-finished furniture and joinery ready for rapid on-site assembly.</p>
         </div>
 
-        <!-- TAB CONTENT PANELS -->
-        <div class="services-tab-content" id="services-tab-content">
-          <!-- PANEL 0 -->
-          <div class="tab-panel active" data-panel="0">
-            <div class="tab-panel-grid">
-              <div class="tab-panel-text">
-                <h3>Residential Interior Design</h3>
-                <p>Tailored design services for private homes, including room makeovers and complete home transformations. We build environments that embody comfort and sophistication.</p>
-                <ul class="service-list">
-                  <li>Personalized spatial planning & mood board generation</li>
-                  <li>Bespoke furniture and custom joinery design</li>
-                  <li>Material selection, color schemes & soft furnishings</li>
-                  <li>Complete project supervision from start to finish</li>
-                </ul>
-                <a href="contact.html" class="btn btn-primary">Request Consultation</a>
-              </div>
-              <div class="tab-panel-img">
-                <img src="assets/images/service-1.jpg" alt="Residential Interior Design" loading="lazy">
-              </div>
-            </div>
+        <div class="core-service-card">
+          <div class="core-service-card-header">
+            <h3>High-End<br>Residential</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M25 8L8 22v20h34V22L25 8z"/></svg>
           </div>
+          <p>Private villas and luxury multi-storey residences delivered with the same precision and craftsmanship as five-star hotels.</p>
+        </div>
 
-          <!-- PANEL 1 -->
-          <div class="tab-panel" data-panel="1">
-            <div class="tab-panel-grid">
-              <div class="tab-panel-text">
-                <h3>Outdoor & Landscape Design</h3>
-                <p>Extending design services to outdoor spaces such as gardens, patios, terraces, and decks for seamless indoor-outdoor living.</p>
-                <ul class="service-list">
-                  <li>Garden and patio layout design</li>
-                  <li>Outdoor kitchen & lounge architecture</li>
-                  <li>Poolside & hardscape design</li>
-                  <li>Architectural lighting for outdoor spaces</li>
-                </ul>
-                <a href="contact.html" class="btn btn-primary">Request Consultation</a>
-              </div>
-              <div class="tab-panel-img">
-                <img src="assets/images/service-2.jpg" alt="Outdoor & Landscape Design" loading="lazy">
-              </div>
-            </div>
+        <div class="core-service-card">
+          <div class="core-service-card-header">
+            <h3>2D/3D Design<br>& BIM</h3>
+            <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="25" cy="25" r="18"/><path d="M25 7v36M7 25h36"/></svg>
           </div>
-
-          <!-- PANEL 2 -->
-          <div class="tab-panel" data-panel="2">
-            <div class="tab-panel-grid">
-              <div class="tab-panel-text">
-                <h3>Interior Design Consultation</h3>
-                <p>Providing professional guidance on concepts, color schemes, lighting plans, and material selection to jumpstart your home vision.</p>
-                <ul class="service-list">
-                  <li>One-on-one expert design sessions</li>
-                  <li>Color palette & finish recommendations</li>
-                  <li>Budget planning and vendor sourcing advice</li>
-                  <li>Space optimization strategy</li>
-                </ul>
-                <a href="contact.html" class="btn btn-primary">Request Consultation</a>
-              </div>
-              <div class="tab-panel-img">
-                <img src="assets/images/service-3.jpg" alt="Interior Design Consultation" loading="lazy">
-              </div>
-            </div>
-          </div>
-
-          <!-- PANEL 3 -->
-          <div class="tab-panel" data-panel="3">
-            <div class="tab-panel-grid">
-              <div class="tab-panel-text">
-                <h3>Commercial Interior Design</h3>
-                <p>Designing functional, highly attractive interiors for business environments including offices, retail boutiques, and hospitality venues.</p>
-                <ul class="service-list">
-                  <li>Workplace efficiency & ergonomic planning</li>
-                  <li>Brand identity integration into architecture</li>
-                  <li>Boutique retail & cafe interior design</li>
-                  <li>High-durability commercial material specification</li>
-                </ul>
-                <a href="contact.html" class="btn btn-primary">Request Consultation</a>
-              </div>
-              <div class="tab-panel-img">
-                <img src="assets/images/service-4.jpg" alt="Commercial Interior Design" loading="lazy">
-              </div>
-            </div>
-          </div>
-
-          <!-- PANEL 4 -->
-          <div class="tab-panel" data-panel="4">
-            <div class="tab-panel-grid">
-              <div class="tab-panel-text">
-                <h3>Renovation and Remodeling</h3>
-                <p>Overhauling existing structures to modernize aesthetics, improve structural flow, and enhance energy efficiency.</p>
-                <ul class="service-list">
-                  <li>Full structural & interior overhaul</li>
-                  <li>Kitchen and bathroom modernization</li>
-                  <li>Heritage property restoration</li>
-                  <li>Permit guidance and contractor management</li>
-                </ul>
-                <a href="contact.html" class="btn btn-primary">Request Consultation</a>
-              </div>
-              <div class="tab-panel-img">
-                <img src="assets/images/service-5.jpg" alt="Renovation and Remodeling" loading="lazy">
-              </div>
-            </div>
-          </div>
-
-          <!-- PANEL 5 -->
-          <div class="tab-panel" data-panel="5">
-            <div class="tab-panel-grid">
-              <div class="tab-panel-text">
-                <h3>Interior 2D/3D Layouts & Visuals</h3>
-                <p>Photorealistic 3D renders and detailed architectural CAD drawings that let you experience your space before breaking ground.</p>
-                <ul class="service-list">
-                  <li>3D architectural walkthroughs</li>
-                  <li>Photorealistic interior renders</li>
-                  <li>2D floor plan generation</li>
-                  <li>Virtual VR tour compatibility</li>
-                </ul>
-                <a href="contact.html" class="btn btn-primary">Request Consultation</a>
-              </div>
-              <div class="tab-panel-img">
-                <img src="assets/images/service-6.jpg" alt="Interior 2D/3D Layouts" loading="lazy">
-              </div>
-            </div>
-          </div>
+          <p>Detailed layouts, photorealistic 3D renders, and BIM-based coordination that let clients experience spaces prior to construction.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- STATS NUMBERS -->
-  <section class="stats-section">
+  <section class="stats-section sketch-bg sketch-bg-floorplan blueprint-grid-bg" style="position:relative; z-index:1;">
     <div class="container">
       <div class="stats-grid" data-anim-stagger>
         <div class="stat-item">
-          <span class="stat-value" data-target="32">0</span>
-          <span class="stat-desc">Years of industry experience</span>
+          <span class="stat-value" data-target="20">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-desc">Years of Contracting Excellence</span>
         </div>
         <div class="stat-item">
-          <span class="stat-value" data-target="250">0</span>
-          <span class="stat-desc">Successful projects delivered</span>
+          <span class="stat-value" data-target="700">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-desc">Projects Delivered Nationwide</span>
         </div>
         <div class="stat-item">
-          <span class="stat-value" data-target="18">0</span>
-          <span class="stat-desc">Design awards received</span>
+          <span class="stat-value" data-target="35">0</span>
+          <span class="stat-suffix">M+</span>
+          <span class="stat-desc">Sq. Ft. Built & Transformed</span>
         </div>
         <div class="stat-item">
-          <span class="stat-value" data-target="99">0</span>
-          <span class="stat-suffix">%</span>
-          <span class="stat-desc">Client satisfaction rate</span>
+          <span class="stat-value" data-target="5000">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-desc">Skilled Professionals</span>
         </div>
       </div>
     </div>
@@ -438,39 +275,39 @@
       <div class="process-grid">
         <div class="process-content" data-anim="fadeRight">
           <span class="section-tag">OUR METHODOLOGY</span>
-          <h2 class="section-title">A seamless path from concept to completion</h2>
-          <p class="section-desc">Our design approach combines creative exploration with meticulous project management to deliver extraordinary results on time and within budget.</p>
+          <h2 class="section-title">A Seamless Path From Concept To Completion</h2>
+          <p class="section-desc">Our 4-stage turnkey process ensures complete transparency and adherence to timelines through our in-house ERP system.</p>
 
           <div class="process-steps">
             <div class="process-step">
               <div class="step-num">01</div>
               <div class="step-body">
-                <h3>Initial Consultation & Brief</h3>
-                <p>We meet to understand your goals, lifestyle requirements, aesthetic preferences, and budget boundaries.</p>
+                <h3>Consultation & Site Assessment</h3>
+                <p>We analyze brief requirements, site conditions, technical specifications, and budgetary boundaries.</p>
               </div>
             </div>
 
             <div class="process-step">
               <div class="step-num">02</div>
               <div class="step-body">
-                <h3>Concept & 3D Spatial Design</h3>
-                <p>We craft mood boards, 2D floor plans, and realistic 3D visualizations to refine every detail together.</p>
+                <h3>Concept, Design & Visualization</h3>
+                <p>Developing 2D drawings, 3D photorealistic visual models, BIM coordination, and material selection.</p>
               </div>
             </div>
 
             <div class="process-step">
               <div class="step-num">03</div>
               <div class="step-body">
-                <h3>Execution & Construction</h3>
-                <p>Our skilled craftsmen and project managers oversee site installation, custom work, and quality control.</p>
+                <h3>Procurement & Production</h3>
+                <p>In-house HOMAG manufacturing run in parallel with site civil & MEP works tracked through ERP.</p>
               </div>
             </div>
 
             <div class="process-step">
               <div class="step-num">04</div>
               <div class="step-body">
-                <h3>Handover & Reveal</h3>
-                <p>We deliver your fully realized space, complete with final styling touchups and maintenance guidance.</p>
+                <h3>Execution & Handover</h3>
+                <p>On-site installation, stringent quality control audits, final walkthrough, and post-handover support.</p>
               </div>
             </div>
           </div>
@@ -478,8 +315,8 @@
 
         <div class="process-images" data-anim="fadeLeft">
           <div class="process-img-stack">
-            <img src="assets/images/virtual-tours6.jpg" alt="Design Process Showcase" class="process-img-main" loading="lazy">
-            <img src="assets/images/h1-slider2-280x300.jpg" alt="Design Detail" class="process-img-secondary" loading="lazy">
+            <img src="assets/images/virtual-tours6.jpg" alt="Turnkey Execution Showcase" class="process-img-main" loading="lazy">
+            <img src="assets/images/h1-slider2-280x300.jpg" alt="Interior Details" class="process-img-secondary" loading="lazy">
           </div>
         </div>
       </div>
@@ -492,99 +329,93 @@
       <div class="section-header" data-anim="fadeUp">
         <div>
           <span class="section-tag">FEATURED WORK</span>
-          <h2 class="section-title">Recent architectural & interior projects</h2>
+          <h2 class="section-title">Iconic National Projects</h2>
         </div>
         <a href="projects.html" class="btn btn-outline">View All Projects →</a>
       </div>
 
       <div class="projects-grid" data-anim-stagger>
-        <!-- PROJECT 1 -->
-        <div class="project-card" data-cat="residential">
+        <div class="project-card">
           <div class="project-img-wrap">
-            <img src="assets/images/project-1-1024x720.jpg" alt="Industrial Elegance Condo" loading="lazy">
+            <img src="assets/images/project-1-1024x720.jpg" alt="Taj Palace Lucknow" loading="lazy">
             <div class="project-overlay">
               <a href="projects.html" class="project-link">View Details</a>
             </div>
           </div>
           <div class="project-info">
-            <span class="project-cat">Residential</span>
-            <h3 class="project-name">Industrial Elegance Condo</h3>
-            <p class="project-loc">Berlin, Germany · 2025</p>
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Taj Palace</h3>
+            <p class="project-loc">Lucknow, Uttar Pradesh · Full Public Areas & Rooms</p>
           </div>
         </div>
 
-        <!-- PROJECT 2 -->
-        <div class="project-card" data-cat="residential">
+        <div class="project-card">
           <div class="project-img-wrap">
-            <img src="assets/images/project-4-1024x720.jpg" alt="Serene Space Studio" loading="lazy">
+            <img src="assets/images/project-4-1024x720.jpg" alt="Taj Gorbandh Palace Jaisalmer" loading="lazy">
             <div class="project-overlay">
               <a href="projects.html" class="project-link">View Details</a>
             </div>
           </div>
           <div class="project-info">
-            <span class="project-cat">Residential</span>
-            <h3 class="project-name">Serene Space Studio</h3>
-            <p class="project-loc">Munich, Germany · 2025</p>
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Taj Gorbandh Palace</h3>
+            <p class="project-loc">Jaisalmer, Rajasthan · Luxury Palace Interiors</p>
           </div>
         </div>
 
-        <!-- PROJECT 3 -->
-        <div class="project-card" data-cat="landscape">
+        <div class="project-card">
           <div class="project-img-wrap">
-            <img src="assets/images/project-5-1024x720.jpg" alt="Urban Zen Apartment" loading="lazy">
+            <img src="assets/images/project-5-1024x720.jpg" alt="Seva Teerth PMO New Delhi" loading="lazy">
             <div class="project-overlay">
               <a href="projects.html" class="project-link">View Details</a>
             </div>
           </div>
           <div class="project-info">
-            <span class="project-cat">Landscape</span>
-            <h3 class="project-name">Urban Zen Villa Garden</h3>
-            <p class="project-loc">Zurich, Switzerland · 2025</p>
+            <span class="project-cat">Institutional</span>
+            <h3 class="project-name">Seva Teerth (PMO)</h3>
+            <p class="project-loc">New Delhi · Inaugurated by PM Modi (Feb 2026)</p>
           </div>
         </div>
 
-        <!-- PROJECT 4 -->
-        <div class="project-card" data-cat="single-home">
+        <div class="project-card">
           <div class="project-img-wrap">
-            <img src="assets/images/project-6-1024x720.jpg" alt="Art Deco Revival" loading="lazy">
-            <div class="project-overlay">
-              <a href="projects.html" class="project-link">View Details</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-cat">Single Home</span>
-            <h3 class="project-name">Art Deco Revival Residence</h3>
-            <p class="project-loc">Vienna, Austria · 2025</p>
-          </div>
-        </div>
-
-        <!-- PROJECT 5 -->
-        <div class="project-card" data-cat="single-home">
-          <div class="project-img-wrap">
-            <img src="assets/images/project-7-1024x720.jpg" alt="Golden Ratio Residence" loading="lazy">
-            <div class="project-overlay">
-              <a href="projects.html" class="project-link">View Details</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-cat">Single Home</span>
-            <h3 class="project-name">Golden Ratio Residence</h3>
-            <p class="project-loc">Frankfurt, Germany · 2025</p>
-          </div>
-        </div>
-
-        <!-- PROJECT 6 -->
-        <div class="project-card" data-cat="commercial">
-          <div class="project-img-wrap">
-            <img src="assets/images/project-9-1024x720.jpg" alt="Boutique Hotel Suite" loading="lazy">
+            <img src="assets/images/project-6-1024x720.jpg" alt="Motilal Oswal Headquarters" loading="lazy">
             <div class="project-overlay">
               <a href="projects.html" class="project-link">View Details</a>
             </div>
           </div>
           <div class="project-info">
             <span class="project-cat">Commercial</span>
-            <h3 class="project-name">Boutique Hotel Executive Suite</h3>
-            <p class="project-loc">Hamburg, Germany · 2025</p>
+            <h3 class="project-name">Motilal Oswal Headquarters</h3>
+            <p class="project-loc">Ahmedabad & Mumbai · 95,000 + 75,000 sq. ft.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-7-1024x720.jpg" alt="Amrita Hospitals Faridabad" loading="lazy">
+            <div class="project-overlay">
+              <a href="projects.html" class="project-link">View Details</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Healthcare</span>
+            <h3 class="project-name">Amrita Hospitals</h3>
+            <p class="project-loc">Faridabad · 9,00,000 sq. ft. Turnkey Package</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-9-1024x720.jpg" alt="Taj Amer Jaipur" loading="lazy">
+            <div class="project-overlay">
+              <a href="projects.html" class="project-link">View Details</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Taj Amer</h3>
+            <p class="project-loc">Jaipur, Rajasthan · 173 Rooms & Banquet</p>
           </div>
         </div>
       </div>
@@ -596,122 +427,92 @@
     <div class="container">
       <div class="section-header centered" data-anim="fadeUp">
         <span class="section-tag">TESTIMONIALS</span>
-        <h2 class="section-title">What our clients say about us</h2>
+        <h2 class="section-title">Client Trust & Endorsements</h2>
         <div class="review-summary">
           <span class="stars">★★★★★</span>
-          <span>4.9 / 5.0 rating from over 120+ verified client reviews</span>
+          <span>Over 60% Repeat Client Rate Across Hospitality & Corporate Sectors</span>
         </div>
       </div>
 
       <div class="testimonials-slider" id="testimonials-slider" data-anim="zoomIn">
-        <!-- TESTIMONIAL 1 -->
         <div class="testimonial-card active">
           <div class="testimonial-quote">“</div>
-          <p class="testimonial-text">"Working with BNP Interiors was an effortless experience from day one. They captured our vision for our penthouse completely and delivered spatial solutions we hadn't even imagined. The craftsmanship is flawless."</p>
+          <p class="testimonial-text">[Client testimonial to be collected]</p>
           <div class="testimonial-author">
-            <img src="assets/images/testimonials-1.jpg" alt="Marcus Vance" loading="lazy">
             <div>
-              <strong>Marcus Vance</strong>
-              <span>CEO, Vance Capital · Berlin</span>
+              <strong>[Client Name]</strong>
+              <span>[Client Title], [Company Name] <small style="color:var(--color-primary); font-size:0.75rem;">[NEEDS INPUT]</small></span>
               <div class="stars-small">★★★★★</div>
             </div>
           </div>
         </div>
 
-        <!-- TESTIMONIAL 2 -->
         <div class="testimonial-card">
           <div class="testimonial-quote">“</div>
-          <p class="testimonial-text">"BNP Interiors converted our historic office building into a state-of-the-art flexible workspace. Their attention to lighting detail and acoustic dampening elevated the whole company's productivity."</p>
+          <p class="testimonial-text">[Client testimonial to be collected]</p>
           <div class="testimonial-author">
-            <img src="assets/images/team-1.jpg" alt="Elena Rostova" loading="lazy">
             <div>
-              <strong>Elena Rostova</strong>
-              <span>Design Director · Munich</span>
+              <strong>[Client Name]</strong>
+              <span>[Client Title], [Company Name] <small style="color:var(--color-primary); font-size:0.75rem;">[NEEDS INPUT]</small></span>
               <div class="stars-small">★★★★★</div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="testimonial-controls">
-        <button class="test-prev" id="test-prev" aria-label="Previous review">‹</button>
-        <div class="test-dots">
-          <div class="test-dot active" data-test="0"></div>
-          <div class="test-dot" data-test="1"></div>
-        </div>
-        <button class="test-next" id="test-next" aria-label="Next review">›</button>
       </div>
     </div>
   </section>
 
-  <!-- TEAM SECTION -->
-  <section class="section">
+  <!-- TEAM LEADERSHIP SECTION -->
+  <section class="section sketch-bg sketch-bg-team blueprint-grid-bg">
     <div class="container">
       <div class="section-header centered" data-anim="fadeUp">
-        <span class="section-tag">THE ARCHITECTS</span>
-        <h2 class="section-title">Meet our creative design leaders</h2>
-        <p class="section-desc">A passionate team of interior architects, spatial planners, and 3D visualizers committed to design excellence.</p>
+        <span class="section-tag">LEADERSHIP & CRAFTSMEN</span>
+        <h2 class="section-title">Meet Our Leadership Team</h2>
+        <p class="section-desc">Guided by visionary leadership and supported by 5,000+ skilled craftsmen nationwide.</p>
       </div>
 
       <div class="team-grid" data-anim-stagger>
         <div class="team-card">
           <div class="team-img">
-            <img src="assets/images/team-1.jpg" alt="Sophia Reynolds" loading="lazy">
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Instagram">ig</a>
-              <a href="#" aria-label="Twitter">tw</a>
-            </div>
+            <img src="assets/images/team-1.jpg" alt="Punam D. Kularia" loading="lazy">
           </div>
           <div class="team-info">
             <span class="team-num">01</span>
-            <h3>Sophia Reynolds</h3>
-            <p>Lead Interior Architect</p>
+            <h3>Punam D. Kularia</h3>
+            <p>Founder & Managing Director</p>
           </div>
         </div>
 
         <div class="team-card">
           <div class="team-img">
-            <img src="assets/images/gallery-1.jpg" alt="Alexander Wright" loading="lazy">
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Instagram">ig</a>
-            </div>
+            <img src="assets/images/gallery-1.jpg" alt="Head of Design" loading="lazy">
           </div>
           <div class="team-info">
             <span class="team-num">02</span>
-            <h3>Alexander Wright</h3>
-            <p>Principal Architect</p>
+            <h3>[Head of Design]</h3>
+            <p>Head of Design <small style="color:var(--color-primary); font-size:0.75rem;">[NEEDS INPUT]</small></p>
           </div>
         </div>
 
         <div class="team-card">
           <div class="team-img">
-            <img src="assets/images/gallery-3.jpg" alt="Isabella Chen" loading="lazy">
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Instagram">ig</a>
-            </div>
+            <img src="assets/images/gallery-3.jpg" alt="Head of Manufacturing" loading="lazy">
           </div>
           <div class="team-info">
             <span class="team-num">03</span>
-            <h3>Isabella Chen</h3>
-            <p>3D Visualization Director</p>
+            <h3>[Head of Manufacturing]</h3>
+            <p>Head of Manufacturing <small style="color:var(--color-primary); font-size:0.75rem;">[NEEDS INPUT]</small></p>
           </div>
         </div>
 
         <div class="team-card">
           <div class="team-img">
-            <img src="assets/images/gallery-4.jpg" alt="Julian Meyer" loading="lazy">
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Instagram">ig</a>
-            </div>
+            <img src="assets/images/gallery-4.jpg" alt="Head of Projects" loading="lazy">
           </div>
           <div class="team-info">
             <span class="team-num">04</span>
-            <h3>Julian Meyer</h3>
-            <p>Landscape Architect</p>
+            <h3>[Project Head - Hospitality]</h3>
+            <p>Project Head — Hospitality <small style="color:var(--color-primary); font-size:0.75rem;">[NEEDS INPUT]</small></p>
           </div>
         </div>
       </div>
@@ -723,20 +524,20 @@
     <div class="cta-overlay"></div>
     <div class="container">
       <div class="cta-content" data-anim="fadeUp">
-        <h2>Ready to Build Your Dream Interior?</h2>
-        <p>Connect with our architectural team today to schedule an initial design session.</p>
-        <a href="contact.html" class="btn btn-primary" style="padding: 16px 40px; font-size: 16px">Get Started Today</a>
+        <h2>Let's Build Something Timeless Together.</h2>
+        <p>From ideation to handover, BNP Interiors partners with you at every step.</p>
+        <a href="contact.html" class="btn btn-primary" style="padding: 12px 28px; font-size: 0.9rem;">Start a Conversation →</a>
       </div>
     </div>
   </section>
 
   <!-- BLOG SECTION -->
-  <section class="section">
+  <section class="section sketch-bg sketch-bg-corner blueprint-grid-bg">
     <div class="container">
       <div class="section-header" data-anim="fadeUp">
         <div>
           <span class="section-tag">JOURNAL</span>
-          <h2 class="section-title">Latest insights & design trends</h2>
+          <h2 class="section-title">Ideas From the Studio</h2>
         </div>
         <a href="blog.html" class="btn btn-outline">Read All Articles →</a>
       </div>
@@ -744,39 +545,39 @@
       <div class="blog-grid" data-anim-stagger>
         <div class="blog-card">
           <div class="blog-img">
-            <img src="assets/images/blog-12.jpg" alt="Functional Design Trends" loading="lazy">
-            <span class="blog-cat">Design Trends</span>
+            <img src="assets/images/blog-12.jpg" alt="Sustainability & Biophilic Design" loading="lazy">
+            <span class="blog-cat">Hospitality</span>
           </div>
           <div class="blog-body">
-            <span class="blog-meta">June 15, 2025 · By BNP Interiors Studio</span>
-            <h3><a href="blog.html">Functional Design Trends That Blend Style and Comfort</a></h3>
-            <p>Discover how modern architectural concepts prioritize natural lighting and organic materials to craft restful living spaces.</p>
+            <span class="blog-meta">June 2026 · By BNP Studio</span>
+            <h3><a href="blog.html">Sustainability & Biophilic Design: What Hospitality Guests Will Expect in 2027</a></h3>
+            <p>Exploring how luxury hotel brands integrate natural elements and energy-efficient spatial planning.</p>
             <a href="blog.html" class="read-more">Read Article →</a>
           </div>
         </div>
 
         <div class="blog-card">
           <div class="blog-img">
-            <img src="assets/images/blog-13.jpg" alt="Innovative Interior Ideas" loading="lazy">
-            <span class="blog-cat">Lighting</span>
+            <img src="assets/images/blog-13.jpg" alt="Inside Our Navi Mumbai Factory" loading="lazy">
+            <span class="blog-cat">Manufacturing</span>
           </div>
           <div class="blog-body">
-            <span class="blog-meta">June 12, 2025 · By BNP Interiors Studio</span>
-            <h3><a href="blog.html">Innovative Lighting Ideas to Refresh Your Living Space</a></h3>
-            <p>Smart ambient lighting techniques that visually expand compact rooms and highlight architectural accents seamlessly.</p>
+            <span class="blog-meta">May 2026 · By BNP Studio</span>
+            <h3><a href="blog.html">Inside Our Navi Mumbai Factory: How German Precision Machinery Shapes Bespoke Furniture</a></h3>
+            <p>A deep-dive into our HOMAG millwork technology and dust-free paint booth lines.</p>
             <a href="blog.html" class="read-more">Read Article →</a>
           </div>
         </div>
 
         <div class="blog-card">
           <div class="blog-img">
-            <img src="assets/images/blog-14.jpg" alt="Modern Interior Tips" loading="lazy">
-            <span class="blog-cat">Interior Tips</span>
+            <img src="assets/images/blog-14.jpg" alt="From Tender to Turnkey" loading="lazy">
+            <span class="blog-cat">Technology</span>
           </div>
           <div class="blog-body">
-            <span class="blog-meta">June 10, 2025 · By BNP Interiors Studio</span>
-            <h3><a href="blog.html">Transform Your Home With Modern Minimalist Concepts</a></h3>
-            <p>Key strategies for decluttering aesthetics while maintaining warmth, depth, and practical daily utility.</p>
+            <span class="blog-meta">April 2026 · By BNP Studio</span>
+            <h3><a href="blog.html">From Tender to Turnkey: How an In-House ERP System Keeps 700+ Projects on Schedule</a></h3>
+            <p>How digital vendor management and real-time site tracking minimize friction across 15+ states.</p>
             <a href="blog.html" class="read-more">Read Article →</a>
           </div>
         </div>
@@ -784,46 +585,22 @@
     </div>
   </section>
 
-  <!-- NEWSLETTER SECTION WITH WIREFRAME BUILDING SKETCHES -->
-  <section class="section sketch-bg-newsletter blueprint-grid-bg" style="padding: 100px 0; text-align: center;">
+  <!-- NEWSLETTER SECTION -->
+  <section class="section sketch-bg-newsletter blueprint-grid-bg" style="padding: 65px 0; text-align: center;">
     <div class="container">
       <div data-anim="fadeUp">
-        <span class="section-tag">SUBSCRIBE TO THE NEWSLETTER</span>
-        <h2 class="section-title" style="font-size: clamp(2.5rem, 5vw, 4.2rem); margin-bottom: 20px;">
-          Join <em>Our Newsletter</em><br>Stay <em>Up To Date</em>
+        <span class="section-tag">SUBSCRIBE TO OUR NEWSLETTER</span>
+        <h2 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 20px;">
+          Stay Updated on <em>Projects & Trends</em>
         </h2>
         <p class="section-desc" style="margin: 0 auto 40px; color: var(--color-text);">
-          Join our newsletter. Learn something new, gain access to exclusive content, and stay informed with the latest updates in the industry.
+          Join our newsletter for exclusive insights into luxury contracting, manufacturing innovations, and project debuts.
         </p>
 
         <form class="newsletter-form" id="newsletter-form-main" style="max-width: 580px; margin: 0 auto; display: flex; gap: 16px;">
-          <input type="email" placeholder="Email address..." required style="flex: 1; padding: 18px 24px; border: 1px solid var(--color-border); border-radius: var(--radius-pill); background: var(--color-white); font-family: var(--font-body); font-size: 0.95rem; outline: none; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
-          <button type="submit" class="btn btn-primary" style="padding: 18px 36px;">Subscribe</button>
+          <input type="email" placeholder="Email address..." required style="flex: 1; padding: 12px 20px; border: 1px solid var(--color-border); border-radius: var(--radius-pill); background: var(--color-white); font-family: var(--font-body); font-size: 0.95rem; outline: none;">
+          <button type="submit" class="btn btn-primary" style="padding: 12px 24px;">Subscribe</button>
         </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- INSTAGRAM GALLERY STRIP -->
-  <section class="gallery-strip">
-    <div class="gallery-strip-inner">
-      <div class="gallery-strip-item">
-        <img src="assets/images/gallery-1.jpg" alt="BNP Interiors Portfolio Detail 1" loading="lazy">
-      </div>
-      <div class="gallery-strip-item">
-        <img src="assets/images/gallery-3.jpg" alt="BNP Interiors Portfolio Detail 2" loading="lazy">
-      </div>
-      <div class="gallery-strip-item">
-        <img src="assets/images/gallery-4.jpg" alt="BNP Interiors Portfolio Detail 3" loading="lazy">
-      </div>
-      <div class="gallery-strip-item">
-        <img src="assets/images/gallery-6.jpg" alt="BNP Interiors Portfolio Detail 4" loading="lazy">
-      </div>
-      <div class="gallery-strip-item">
-        <img src="assets/images/gallery-7.jpg" alt="BNP Interiors Portfolio Detail 5" loading="lazy">
-      </div>
-      <div class="gallery-strip-item">
-        <img src="assets/images/gallery-9.jpg" alt="BNP Interiors Portfolio Detail 6" loading="lazy">
       </div>
     </div>
   </section>
@@ -837,11 +614,10 @@
           <a href="index.html" class="footer-logo">
             <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:44px;width:auto">
           </a>
-          <p>We transform your vision into beautifully crafted spaces. Timeless design, delivered with precision and perfection.</p>
+          <p>BNP Interiors — Where visionary ideas meet flawless execution. Founded in 2006, we deliver turnkey civil and interior contracting and in-house furniture manufacturing for India's leading hospitality, commercial, and residential addresses. 700+ Projects | 35+ Million Sq. Ft. | Pan-India.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+            <a href="https://www.linkedin.com/company/bnpinteriorsindia/" target="_blank" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.75a1.46 1.46 0 1 0 0 2.92 1.46 1.46 0 0 0 0-2.92z"/></svg></a>
+            <a href="https://instagram.com/bnpinteriors" target="_blank" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
           </div>
         </div>
 
@@ -849,21 +625,24 @@
           <h4>Quick Links</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="projects.html">Our Projects</a></li>
+            <li><a href="team.html">Our Team</a></li>
             <li><a href="blog.html">Blog & News</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Services</h4>
+          <h4>Our Services</h4>
           <ul>
-            <li><a href="services.html">Residential Design</a></li>
-            <li><a href="services.html">Commercial Interiors</a></li>
-            <li><a href="services.html">Landscape Architecture</a></li>
-            <li><a href="services.html">3D Visualization</a></li>
-            <li><a href="services.html">Renovation & Remodel</a></li>
+            <li><a href="services.html">Hospitality Interiors</a></li>
+            <li><a href="services.html">Commercial & Corporate</a></li>
+            <li><a href="services.html">Civil & MEP Turnkey</a></li>
+            <li><a href="services.html#manufacturing">Bespoke Furniture Manufacturing</a></li>
+            <li><a href="services.html">High-End Residential</a></li>
+            <li><a href="services.html">2D/3D Design & BIM</a></li>
           </ul>
         </div>
 
@@ -872,15 +651,19 @@
           <ul class="footer-contact-list">
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              5609 E Sprague Ave, Spokane Valley, WA 99212, USA
+              <strong>HQ:</strong> 519–520, Laxmi Industrial Estate, Laxmi Mall, New Link Road, Andheri (W), Mumbai – 400053
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <strong>Factory:</strong> Plot A 24/25, MIDC, TTC Area, Kopar Khairane, Navi Mumbai – 400710
             </li>
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-              +(084) 456-0789
+              (022) 61570554 &nbsp;|&nbsp; +91 98213 10554
             </li>
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              info@bnpinteriors.com
+              info@bnpinteriors.com &nbsp;|&nbsp; tender@bnpinteriors.com
             </li>
           </ul>
         </div>
@@ -889,16 +672,16 @@
       <div class="footer-newsletter">
         <div class="newsletter-content">
           <h4>Subscribe to our newsletter</h4>
-          <p>Get exclusive design tips, latest project showcases, and interior architecture news.</p>
+          <p>Stay updated on our latest projects, design trends, and studio news.</p>
         </div>
         <form class="newsletter-form" id="newsletter-form">
-          <input type="email" placeholder="Enter your email address" required id="newsletter-email">
+          <input type="email" placeholder="Enter your email address..." required id="newsletter-email">
           <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>
       </div>
 
       <div class="footer-bottom">
-        <p>© 2025 BNP Interiors. All rights reserved. Designed by BNP Interiors</p>
+        <p>© 2026 BNP Interiors. All rights reserved.</p>
         <div class="footer-bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>

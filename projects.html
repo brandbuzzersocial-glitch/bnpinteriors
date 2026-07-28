@@ -3,146 +3,215 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects – BNP Interiors Architecture & Interior Design</title>
-  <meta name="description" content="Browse BNP Interiors's portfolio of innovative architectural and interior design projects from residential to commercial spaces.">
+  <title>Projects Portfolio – BNP Interiors</title>
+  <meta name="description" content="Explore BNP Interiors's portfolio of landmark projects across hospitality, commercial, banking, retail, and institutional sectors in India.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="page-loader" id="page-loader"><div class="loader-logo" style="display:flex;align-items:center;justify-content:center"><img src="assets/images/bnp-logo.png" alt="BNP Interiors" style="height:55px;width:auto"></div></div>
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-inner">
+      <div class="loader-logo" style="display:flex;align-items:center;justify-content:center"><img src="assets/images/bnp-logo.png" alt="BNP Interiors" style="height:55px;width:auto"></div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
 
-  <header class="site-header scrolled" id="site-header">
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
     <div class="header-inner">
-            <a href="index.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:36px;width:auto">
       </a>
       <nav class="main-nav" id="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About Us</a></li>
+          <li><a href="services.html" class="">Services</a></li>
           <li><a href="projects.html" class="active">Projects</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="team.html" class="">Our Team</a></li>
+          <li><a href="blog.html" class="">Blog</a></li>
+          <li><a href="contact.html" class="">Contact Us</a></li>
         </ul>
       </nav>
       <div class="header-actions">
-        <button class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></button>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <section class="page-hero" style="background-image: url('assets/images/pro-banner-1.jpg')">
-    <div class="page-hero-overlay"></div>
+  <section class="section blueprint-grid-bg" style="background: var(--color-dark-rich); color: var(--color-white); padding: 60px 0 40px;">
+    <div class="container" style="text-align:center;">
+      <span class="section-tag" style="color: var(--color-primary);">PORTFOLIO</span>
+      <h1 style="color: var(--color-white); margin-top: 10px; font-size: clamp(1.8rem, 3.5vw, 2.6rem);">
+        Landmark Projects Across India
+      </h1>
+      <p style="max-width: 680px; margin: 20px auto 0; color: #ccc; font-size: 0.95rem; line-height: 1.6;">
+        700+ Projects | 35+ Million Sq. Ft. Delivered Across Hospitality, Corporate, Banking, and Institutional Sectors.
+      </p>
+    </div>
+  </section>
+
+  
+
+  <section class="section sketch-bg sketch-bg-both blueprint-grid-bg">
     <div class="container">
-      <div class="page-hero-content">
-        <div class="breadcrumb"><a href="index.html">Home</a><span>→</span><span>Projects</span></div>
-        <h1 class="page-hero-title">Our Projects</h1>
+      <div class="projects-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:30px;" data-anim-stagger>
+        
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-1-1024x720.jpg" alt="Taj Palace Lucknow" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Taj Palace</h3>
+            <p class="project-loc">Lucknow, UP · All Public Areas & Guest Rooms</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-4-1024x720.jpg" alt="Taj Gorbandh Palace Jaisalmer" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Taj Gorbandh Palace</h3>
+            <p class="project-loc">Jaisalmer, Rajasthan · Full Luxury Palace Interiors</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-5-1024x720.jpg" alt="Taj Amer Jaipur" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Taj Amer</h3>
+            <p class="project-loc">Jaipur, Rajasthan · 173 King Rooms, 19 Suites & Banquet</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-6-1024x720.jpg" alt="Taj Ganga Kutir Raichak" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Taj Ganga Kutir</h3>
+            <p class="project-loc">Raichak, West Bengal · 150 Rooms + 10 Villas</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-7-1024x720.jpg" alt="Taj Puri Resort & Spa" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Taj Puri Resort & Spa</h3>
+            <p class="project-loc">Puri, Odisha · Guest Rooms to Ballroom Full Scope</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-9-1024x720.jpg" alt="The Chambers, Taj Mahal Palace" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">The Chambers, Taj Mahal Palace</h3>
+            <p class="project-loc">Mumbai · Members' Lounge & Conference Suites</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 7 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/service-1.jpg" alt="Vivanta Bhubaneswar" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Vivanta</h3>
+            <p class="project-loc">Bhubaneswar, Odisha · 136 Guest Rooms & Public Areas</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 8 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/service-2.jpg" alt="Radisson Jamshedpur" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Hospitality</span>
+            <h3 class="project-name">Radisson</h3>
+            <p class="project-loc">Jamshedpur, Jharkhand · Presidential Suites to All-Day Dining</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 9 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/service-3.jpg" alt="Seva Teerth PMO New Delhi" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Institutional</span>
+            <h3 class="project-name">Seva Teerth (PMO)</h3>
+            <p class="project-loc">New Delhi · Inaugurated by PM Modi, Feb 2026</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 10 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/service-4.jpg" alt="Amrita Hospitals Faridabad" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Healthcare</span>
+            <h3 class="project-name">Amrita Hospitals</h3>
+            <p class="project-loc">Faridabad · 9,00,000 sq. ft., 302 ICUs, 4 OTs Package</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 11 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/service-5.jpg" alt="Dhirubhai Ambani International School" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Education</span>
+            <h3 class="project-name">Dhirubhai Ambani International School</h3>
+            <p class="project-loc">BKC, Mumbai · Full Campus Interiors</p>
+          </div>
+        </div>
+
+        <!-- PROJECT 12 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/service-6.jpg" alt="Motilal Oswal Headquarters" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Commercial</span>
+            <h3 class="project-name">Motilal Oswal Headquarters</h3>
+            <p class="project-loc">Ahmedabad & Mumbai · 95,000 + 75,000 sq. ft.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="section sketch-bg sketch-bg-2 blueprint-grid-bg">
-    <div class="container">
-      <div class="section-header centered" style="margin-bottom:30px">
-        <span class="section-tag">OUR PORTFOLIO</span>
-        <h2 class="section-title">Creative projects that define our style</h2>
-        <p class="section-desc">Our portfolio showcases a diverse range of projects, from beautifully crafted residential spaces to functional and stylish commercial interiors.</p>
-      </div>
-      <div class="projects-filter" id="projects-filter" style="justify-content:center;margin-bottom:50px">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="residential">Residential</button>
-        <button class="filter-btn" data-filter="landscape">Landscape</button>
-        <button class="filter-btn" data-filter="single-home">Single Home</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-      </div>
-      <div class="projects-grid" id="projects-grid" style="grid-template-columns:repeat(3,1fr)">
-        <div class="project-card" data-cat="residential" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-1-1024x720.jpg" alt="Industrial Elegance Condo" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Residential</span><h3 class="project-name">Industrial Elegance Condo</h3><p class="project-loc">Berlin, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="residential" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-4-1024x720.jpg" alt="Serene Space Studio" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Residential</span><h3 class="project-name">Serene Space Studio</h3><p class="project-loc">Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="landscape" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-5-1024x720.jpg" alt="Urban Zen Apartment" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Landscape</span><h3 class="project-name">Urban Zen Apartment</h3><p class="project-loc">Berlin, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="single-home" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-6-1024x720.jpg" alt="Art Deco Revival" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Single Home</span><h3 class="project-name">Art Deco Revival</h3><p class="project-loc">Berlin, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="single-home" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-7-1024x720.jpg" alt="Golden Ratio Residence" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Single Home</span><h3 class="project-name">Golden Ratio Residence</h3><p class="project-loc">Berlin, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="landscape" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-8-1024x720.jpg" alt="Nordic Minimalist Loft" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Landscape</span><h3 class="project-name">Nordic Minimalist Loft</h3><p class="project-loc">Berlin, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="commercial" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-9-1024x720.jpg" alt="Boutique Hotel Suite" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Commercial</span><h3 class="project-name">Boutique Hotel Suite</h3><p class="project-loc">Munich, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="residential" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-10-1024x720.jpg" alt="Scandinavian Dream Home" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Residential</span><h3 class="project-name">Scandinavian Dream Home</h3><p class="project-loc">Hamburg, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="commercial" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-11-1024x720.jpg" alt="Modern Office Hub" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Commercial</span><h3 class="project-name">Modern Office Hub</h3><p class="project-loc">Frankfurt, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="single-home" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/project-12-1024x720.jpg" alt="Coastal Retreat Villa" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Single Home</span><h3 class="project-name">Coastal Retreat Villa</h3><p class="project-loc">Cologne, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="landscape" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/gallery-6.jpg" alt="Zen Garden Sanctuary" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Landscape</span><h3 class="project-name">Zen Garden Sanctuary</h3><p class="project-loc">Stuttgart, Germany · 2025</p></div>
-        </div>
-        <div class="project-card" data-cat="residential" data-anim="fadeInUp">
-          <div class="project-img-wrap"><img src="assets/images/gallery-12.jpg" alt="Urban Penthouse Suite" loading="lazy"><div class="project-overlay"><a href="#" class="project-link">View Project</a></div></div>
-          <div class="project-info"><span class="project-cat">Residential</span><h3 class="project-name">Urban Penthouse Suite</h3><p class="project-loc">Berlin, Germany · 2025</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="section" style="background:var(--color-light)">
-    <div class="container">
-      <div class="section-header centered">
-        <span class="section-tag">GALLERY</span>
-        <h2 class="section-title">Project highlights</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:50px">
-        <div style="border-radius:8px;overflow:hidden;height:220px"><img src="assets/images/gallery-1.jpg" alt="Gallery" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'" loading="lazy"></div>
-        <div style="border-radius:8px;overflow:hidden;height:220px"><img src="assets/images/gallery-3.jpg" alt="Gallery" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'" loading="lazy"></div>
-        <div style="border-radius:8px;overflow:hidden;height:220px"><img src="assets/images/gallery-4.jpg" alt="Gallery" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'" loading="lazy"></div>
-        <div style="border-radius:8px;overflow:hidden;height:220px"><img src="assets/images/gallery-7.jpg" alt="Gallery" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'" loading="lazy"></div>
-        <div style="border-radius:8px;overflow:hidden;height:220px"><img src="assets/images/gallery-9.jpg" alt="Gallery" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'" loading="lazy"></div>
-        <div style="border-radius:8px;overflow:hidden;height:220px"><img src="assets/images/gallery-11.jpg" alt="Gallery" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'" loading="lazy"></div>
-        <div style="border-radius:8px;overflow:hidden;height:220px"><img src="assets/images/gallery-12.jpg" alt="Gallery" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'" loading="lazy"></div>
-        <div style="border-radius:8px;overflow:hidden;height:220px"><img src="assets/images/gallery-6.jpg" alt="Gallery" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'" loading="lazy"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section" style="background-image: url('assets/images/foter-bg.jpg')">
-    <div class="cta-overlay"></div>
-    <div class="container">
-      <div class="cta-content" data-anim="fadeInUp">
-        <h2>Have a Project in Mind?</h2>
-        <p>Let's collaborate to create something extraordinary. Contact our team today.</p>
-        <a href="contact.html" class="btn btn-light">Contact Us</a>
-      </div>
-    </div>
-  </section>
-
+  <!-- FOOTER -->
   <footer class="site-footer" style="background-image: url('assets/images/foter-bg.jpg')">
     <div class="footer-overlay"></div>
     <div class="container">
@@ -151,26 +220,82 @@
           <a href="index.html" class="footer-logo">
             <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:44px;width:auto">
           </a>
-          <p>We transform your vision into beautifully crafted spaces. Timeless design, delivered with precision.</p>
+          <p>BNP Interiors — Where visionary ideas meet flawless execution. Founded in 2006, we deliver turnkey civil and interior contracting and in-house furniture manufacturing for India's leading hospitality, commercial, and residential addresses. 700+ Projects | 35+ Million Sq. Ft. | Pan-India.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></a>
+            <a href="https://www.linkedin.com/company/bnpinteriorsindia/" target="_blank" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.75a1.46 1.46 0 1 0 0 2.92 1.46 1.46 0 0 0 0-2.92z"/></svg></a>
+            <a href="https://instagram.com/bnpinteriors" target="_blank" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
           </div>
         </div>
-        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Our Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
-        <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Residential Design</a></li><li><a href="services.html">Commercial Design</a></li><li><a href="services.html">Landscape Design</a></li><li><a href="services.html">3D Visualization</a></li></ul></div>
-        <div class="footer-col"><h4>Contact Info</h4><ul class="footer-contact-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>5609 E Sprague Ave, Spokane Valley, WA 99212</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>+(084) 456-0789</li></ul></div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Our Projects</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="blog.html">Blog & News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Hospitality Interiors</a></li>
+            <li><a href="services.html">Commercial & Corporate</a></li>
+            <li><a href="services.html">Civil & MEP Turnkey</a></li>
+            <li><a href="services.html#manufacturing">Bespoke Furniture Manufacturing</a></li>
+            <li><a href="services.html">High-End Residential</a></li>
+            <li><a href="services.html">2D/3D Design & BIM</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <strong>HQ:</strong> 519–520, Laxmi Industrial Estate, Laxmi Mall, New Link Road, Andheri (W), Mumbai – 400053
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <strong>Factory:</strong> Plot A 24/25, MIDC, TTC Area, Kopar Khairane, Navi Mumbai – 400710
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+              (022) 61570554 &nbsp;|&nbsp; +91 98213 10554
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@bnpinteriors.com &nbsp;|&nbsp; tender@bnpinteriors.com
+            </li>
+          </ul>
+        </div>
       </div>
+
       <div class="footer-newsletter">
-        <div class="newsletter-content"><h4>Subscribe to the newsletter</h4><p>Join our newsletter and stay informed with the latest updates.</p></div>
-        <form class="newsletter-form" id="newsletter-form"><input type="email" placeholder="Enter your email address" required id="newsletter-email"><button type="submit" class="btn btn-primary">Subscribe</button></form>
+        <div class="newsletter-content">
+          <h4>Subscribe to our newsletter</h4>
+          <p>Stay updated on our latest projects, design trends, and studio news.</p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email address..." required id="newsletter-email">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2025 BNP Interiors. All rights reserved. Designed by BNP Interiors</p>
-        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></div>
+        <p>© 2026 BNP Interiors. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
       </div>
     </div>
   </footer>
+
   <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
   <script src="assets/js/main.js"></script>
 </body>

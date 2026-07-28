@@ -575,8 +575,9 @@ h6 { font-size: 1.25rem; }
 .main-nav ul { display: flex; align-items: center; gap: 38px; }
 
 .main-nav a {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: 15px;
+  font-weight: 600;
   color: var(--color-white);
   letter-spacing: 0.3px;
   text-transform: capitalize;

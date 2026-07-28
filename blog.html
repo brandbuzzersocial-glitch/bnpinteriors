@@ -3,216 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog – BNP Interiors Architecture & Interior Design</title>
-  <meta name="description" content="Read the latest articles and insights on interior design, architecture trends, and home transformation tips from the BNP Interiors team.">
+  <title>Blog – BNP Interiors Architecture & Turnkey Insights</title>
+  <meta name="description" content="Read articles, industry trends, and insights on hospitality design, commercial fit-outs, and furniture manufacturing from BNP Interiors.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="page-loader" id="page-loader"><div class="loader-logo" style="display:flex;align-items:center;justify-content:center"><img src="assets/images/bnp-logo.png" alt="BNP Interiors" style="height:55px;width:auto"></div></div>
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-inner">
+      <div class="loader-logo" style="display:flex;align-items:center;justify-content:center"><img src="assets/images/bnp-logo.png" alt="BNP Interiors" style="height:55px;width:auto"></div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
 
-  <header class="site-header scrolled" id="site-header">
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
     <div class="header-inner">
-            <a href="index.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:36px;width:auto">
       </a>
       <nav class="main-nav" id="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="team.html">Our Team</a></li>
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About Us</a></li>
+          <li><a href="services.html" class="">Services</a></li>
+          <li><a href="projects.html" class="">Projects</a></li>
+          <li><a href="team.html" class="">Our Team</a></li>
           <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html" class="">Contact Us</a></li>
         </ul>
       </nav>
       <div class="header-actions">
-        <button class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></button>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <section class="page-hero" style="background-image: url('assets/images/breadcrumb-df.jpg')">
-    <div class="page-hero-overlay"></div>
-    <div class="container">
-      <div class="page-hero-content">
-        <div class="breadcrumb"><a href="index.html">Home</a><span>→</span><span>Blog</span></div>
-        <h1 class="page-hero-title">Blog & Articles</h1>
-      </div>
+  <section class="section blueprint-grid-bg" style="background: var(--color-dark-rich); color: var(--color-white); padding: 60px 0 40px;">
+    <div class="container" style="text-align:center;">
+      <span class="section-tag" style="color: var(--color-primary);">JOURNAL & INSIGHTS</span>
+      <h1 style="color: var(--color-white); margin-top: 10px; font-size: clamp(1.8rem, 3.5vw, 2.6rem);">
+        Ideas From the Studio
+      </h1>
+      <p style="max-width: 680px; margin: 20px auto 0; color: #ccc; font-size: 0.95rem; line-height: 1.6;">
+        Perspectives on turnkey contracting, German furniture manufacturing, and luxury hospitality trends across India.
+      </p>
     </div>
   </section>
 
-  <section class="section">
+  
+
+  <section class="section sketch-bg sketch-bg-corner blueprint-grid-bg">
     <div class="container">
-      <div class="blog-layout">
-        <!-- MAIN BLOG POSTS -->
-        <div class="blog-grid-large">
-
-          <div class="blog-card-large" data-anim="fadeInUp">
-            <div class="blog-img">
-              <img src="assets/images/blog-12.jpg" alt="Functional Design Trends" loading="lazy">
-            </div>
-            <div class="blog-body">
-              <span class="blog-cat" style="position:static;display:inline-block;margin-bottom:12px">Power Tools</span>
-              <span class="blog-meta">By admin · June 15, 2025</span>
-              <h3><a href="#">Functional Design Trends That Blend Style and Comfort</a></h3>
-              <p>Modern interior design is all about creating a sleek, functional, and aesthetically pleasing space that reflects contemporary living. Whether you're updating a single room or redesigning your entire home, incorporating these trends can make a real difference in how your space feels and functions.</p>
-              <a href="#" class="btn btn-outline" style="padding:10px 24px;margin-top:8px">Read More →</a>
-            </div>
+      <div class="blog-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap:35px;" data-anim-stagger>
+        
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="assets/images/blog-12.jpg" alt="Sustainability & Biophilic Design" loading="lazy">
+            <span class="blog-cat">Hospitality</span>
           </div>
-
-          <div class="blog-card-large" data-anim="fadeInUp">
-            <div class="blog-img">
-              <img src="assets/images/blog-13.jpg" alt="Innovative Interior Ideas" loading="lazy">
-            </div>
-            <div class="blog-body">
-              <span class="blog-cat" style="position:static;display:inline-block;margin-bottom:12px">Electrical & Lighting</span>
-              <span class="blog-meta">By admin · June 12, 2025</span>
-              <h3><a href="#">Innovative Interior Ideas to Refresh Your Living Space</a></h3>
-              <p>Whether you're updating a single room or redesigning your entire home, incorporating innovative interior ideas can make your living space feel brand new. From clever storage solutions to statement lighting, discover the ideas that can transform your home.</p>
-              <a href="#" class="btn btn-outline" style="padding:10px 24px;margin-top:8px">Read More →</a>
-            </div>
+          <div class="blog-body">
+            <span class="blog-meta">June 2026 · By BNP Studio</span>
+            <h3><a href="#">Sustainability & Biophilic Design: What Hospitality Guests Will Expect in 2027</a></h3>
+            <p>Exploring how luxury hotel brands integrate natural elements, organic textures, and energy-efficient spatial planning to craft restful guest experiences.</p>
+            <a href="#" class="read-more">Read Article →</a>
           </div>
-
-          <div class="blog-card-large" data-anim="fadeInUp">
-            <div class="blog-img">
-              <img src="assets/images/blog-14.jpg" alt="Modern Interior Design Tips" loading="lazy">
-            </div>
-            <div class="blog-body">
-              <span class="blog-cat" style="position:static;display:inline-block;margin-bottom:12px">Accessories</span>
-              <span class="blog-meta">By admin · June 10, 2025</span>
-              <h3><a href="#">Transform Your Home With the Modern Interior Design Tips</a></h3>
-              <p>Modern interior design is all about creating a sleek, functional, and aesthetically pleasing space that reflects contemporary living. These expert tips will help you achieve a sophisticated look without breaking the bank.</p>
-              <a href="#" class="btn btn-outline" style="padding:10px 24px;margin-top:8px">Read More →</a>
-            </div>
-          </div>
-
-          <div class="blog-card-large" data-anim="fadeInUp">
-            <div class="blog-img">
-              <img src="assets/images/blog-15.jpg" alt="Sleek Interior Concepts" loading="lazy">
-            </div>
-            <div class="blog-body">
-              <span class="blog-cat" style="position:static;display:inline-block;margin-bottom:12px">Electrical & Lighting</span>
-              <span class="blog-meta">By admin · June 8, 2025</span>
-              <h3><a href="#">Elevate Every Corner With Sleek Interior Concepts</a></h3>
-              <p>Transforming your home doesn't require a complete overhaul. Sometimes, elevating specific corners with sleek, modern concepts can breathe new life into your entire space. Discover how strategic design choices can make every corner count.</p>
-              <a href="#" class="btn btn-outline" style="padding:10px 24px;margin-top:8px">Read More →</a>
-            </div>
-          </div>
-
-          <div class="blog-card-large" data-anim="fadeInUp">
-            <div class="blog-img">
-              <img src="assets/images/blog-7.jpg" alt="Smart Designs for Elegant Living" loading="lazy">
-            </div>
-            <div class="blog-body">
-              <span class="blog-cat" style="position:static;display:inline-block;margin-bottom:12px">Home Appliance</span>
-              <span class="blog-meta">By admin · June 5, 2025</span>
-              <h3><a href="#">The Art of Space: Smart Designs for Elegant Living</a></h3>
-              <p>The art of creating elegant living spaces lies in smart, purposeful design choices. Learn how to maximize your space, optimize light, and create a harmonious environment that balances beauty and practicality in every room of your home.</p>
-              <a href="#" class="btn btn-outline" style="padding:10px 24px;margin-top:8px">Read More →</a>
-            </div>
-          </div>
-
-          <div class="blog-card-large" data-anim="fadeInUp">
-            <div class="blog-img">
-              <img src="assets/images/blog-9.jpg" alt="Blending Function and Aesthetic" loading="lazy">
-            </div>
-            <div class="blog-body">
-              <span class="blog-cat" style="position:static;display:inline-block;margin-bottom:12px">Power Tools</span>
-              <span class="blog-meta">By admin · June 2, 2025</span>
-              <h3><a href="#">Inspired Spaces: Blending Function and Aesthetic</a></h3>
-              <p>The most successful interior spaces seamlessly blend function with aesthetic beauty. Explore how our designers approach the challenge of creating spaces that look stunning while meeting the practical needs of everyday life.</p>
-              <a href="#" class="btn btn-outline" style="padding:10px 24px;margin-top:8px">Read More →</a>
-            </div>
-          </div>
-
         </div>
 
-        <!-- SIDEBAR -->
-        <aside class="blog-sidebar">
-          <div class="sidebar-widget">
-            <h4>Search</h4>
-            <div class="sidebar-search">
-              <input type="text" placeholder="Search articles...">
-              <button>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              </button>
-            </div>
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="assets/images/blog-13.jpg" alt="Inside Our Navi Mumbai Factory" loading="lazy">
+            <span class="blog-cat">Manufacturing</span>
           </div>
+          <div class="blog-body">
+            <span class="blog-meta">May 2026 · By BNP Studio</span>
+            <h3><a href="#">Inside Our Navi Mumbai Factory: How German Precision Machinery Shapes Bespoke Furniture</a></h3>
+            <p>A deep-dive into our HOMAG millwork technology, CNC beam saws, and dust-free paint booth lines delivering factory-finished furniture nationwide.</p>
+            <a href="#" class="read-more">Read Article →</a>
+          </div>
+        </div>
 
-          <div class="sidebar-widget">
-            <h4>Categories</h4>
-            <ul class="category-list">
-              <li><a href="#">Power Tools <span>3</span></a></li>
-              <li><a href="#">Electrical & Lighting <span>4</span></a></li>
-              <li><a href="#">Accessories <span>2</span></a></li>
-              <li><a href="#">Home Appliance <span>3</span></a></li>
-              <li><a href="#">Ware Accessories <span>2</span></a></li>
-              <li><a href="#">Uncategorized <span>1</span></a></li>
-            </ul>
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="assets/images/blog-14.jpg" alt="From Tender to Turnkey" loading="lazy">
+            <span class="blog-cat">Technology</span>
           </div>
+          <div class="blog-body">
+            <span class="blog-meta">April 2026 · By BNP Studio</span>
+            <h3><a href="#">From Tender to Turnkey: How an In-House ERP System Keeps 700+ Projects on Schedule</a></h3>
+            <p>How digital procurement, real-time site tracking, and integrated logistics minimize friction across 15+ Indian states.</p>
+            <a href="#" class="read-more">Read Article →</a>
+          </div>
+        </div>
 
-          <div class="sidebar-widget">
-            <h4>Recent Posts</h4>
-            <div class="recent-posts">
-              <div class="recent-post">
-                <img src="assets/images/blog-12-330x330.jpg" alt="Functional Design Trends" loading="lazy">
-                <div class="recent-post-info">
-                  <h5><a href="#">Functional Design Trends That Blend Style and Comfort</a></h5>
-                  <span>June 15, 2025</span>
-                </div>
-              </div>
-              <div class="recent-post">
-                <img src="assets/images/blog-13-330x330.jpg" alt="Innovative Interior Ideas" loading="lazy">
-                <div class="recent-post-info">
-                  <h5><a href="#">Innovative Interior Ideas to Refresh Your Living Space</a></h5>
-                  <span>June 12, 2025</span>
-                </div>
-              </div>
-              <div class="recent-post">
-                <img src="assets/images/blog-14-330x330.jpg" alt="Modern Interior Design Tips" loading="lazy">
-                <div class="recent-post-info">
-                  <h5><a href="#">Transform Your Home With the Modern Interior Design Tips</a></h5>
-                  <span>June 10, 2025</span>
-                </div>
-              </div>
-              <div class="recent-post">
-                <img src="assets/images/blog-15-330x330.jpg" alt="Sleek Interior Concepts" loading="lazy">
-                <div class="recent-post-info">
-                  <h5><a href="#">Elevate Every Corner With Sleek Interior Concepts</a></h5>
-                  <span>June 8, 2025</span>
-                </div>
-              </div>
-            </div>
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="assets/images/service-1.jpg" alt="Designing for Banking & BFSI" loading="lazy">
+            <span class="blog-cat">Commercial</span>
           </div>
+          <div class="blog-body">
+            <span class="blog-meta">March 2026 · By BNP Studio</span>
+            <h3><a href="#">Designing for Banking & BFSI: Lessons from HDFC, Citibank & BNP Paribas Fit-Outs</a></h3>
+            <p>Balancing high security, acoustic dampening, and modern brand identity across large-format financial headquarters.</p>
+            <a href="#" class="read-more">Read Article →</a>
+          </div>
+        </div>
 
-          <div class="sidebar-widget">
-            <h4>Newsletter</h4>
-            <p style="font-size:0.88rem;color:var(--color-text-light);margin-bottom:16px;line-height:1.6">Subscribe to get our latest articles and updates delivered to your inbox.</p>
-            <form id="sidebar-newsletter" style="display:flex;flex-direction:column;gap:10px">
-              <input type="email" placeholder="Your email address" style="padding:12px 16px;border:1px solid var(--color-border);border-radius:4px;font-family:inherit;font-size:0.88rem;outline:none">
-              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Subscribe</button>
-            </form>
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="assets/images/service-2.jpg" alt="The Making of a Palace Hotel" loading="lazy">
+            <span class="blog-cat">Hospitality</span>
           </div>
-        </aside>
+          <div class="blog-body">
+            <span class="blog-meta">February 2026 · By BNP Studio</span>
+            <h3><a href="#">The Making of a Palace Hotel: Behind the Scenes at Taj Gorbandh Palace, Jaisalmer</a></h3>
+            <p>Translating authentic Rajasthani heritage into modern luxury hospitality interiors with handcrafted stone and bespoke joinery.</p>
+            <a href="#" class="read-more">Read Article →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="assets/images/service-3.jpg" alt="Minimalism Meets Local Culture" loading="lazy">
+            <span class="blog-cat">Design Trends</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-meta">January 2026 · By BNP Studio</span>
+            <h3><a href="#">Minimalism Meets Local Culture: Where Hospitality Interior Trends Are Headed</a></h3>
+            <p>Why modern luxury travelers favor spaces that combine sleek minimal lines with authentic regional cultural accents.</p>
+            <a href="#" class="read-more">Read Article →</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="cta-section" style="background-image: url('assets/images/foter-bg.jpg')">
-    <div class="cta-overlay"></div>
-    <div class="container">
-      <div class="cta-content" data-anim="fadeInUp">
-        <h2>Ready to Transform Your Space?</h2>
-        <p>Turn your vision into a beautifully crafted reality with our expert design team.</p>
-        <a href="contact.html" class="btn btn-light">Get Started</a>
-      </div>
-    </div>
-  </section>
-
+  <!-- FOOTER -->
   <footer class="site-footer" style="background-image: url('assets/images/foter-bg.jpg')">
     <div class="footer-overlay"></div>
     <div class="container">
@@ -221,27 +154,82 @@
           <a href="index.html" class="footer-logo">
             <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:44px;width:auto">
           </a>
-          <p>We transform your vision into beautifully crafted spaces. Timeless design, delivered with precision.</p>
+          <p>BNP Interiors — Where visionary ideas meet flawless execution. Founded in 2006, we deliver turnkey civil and interior contracting and in-house furniture manufacturing for India's leading hospitality, commercial, and residential addresses. 700+ Projects | 35+ Million Sq. Ft. | Pan-India.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+            <a href="https://www.linkedin.com/company/bnpinteriorsindia/" target="_blank" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.75a1.46 1.46 0 1 0 0 2.92 1.46 1.46 0 0 0 0-2.92z"/></svg></a>
+            <a href="https://instagram.com/bnpinteriors" target="_blank" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
           </div>
         </div>
-        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Our Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
-        <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Residential Design</a></li><li><a href="services.html">Commercial Design</a></li><li><a href="services.html">Landscape Design</a></li><li><a href="services.html">3D Visualization</a></li></ul></div>
-        <div class="footer-col"><h4>Contact Info</h4><ul class="footer-contact-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>5609 E Sprague Ave, Spokane Valley, WA 99212</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>+(084) 456-0789</li></ul></div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Our Projects</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="blog.html">Blog & News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Hospitality Interiors</a></li>
+            <li><a href="services.html">Commercial & Corporate</a></li>
+            <li><a href="services.html">Civil & MEP Turnkey</a></li>
+            <li><a href="services.html#manufacturing">Bespoke Furniture Manufacturing</a></li>
+            <li><a href="services.html">High-End Residential</a></li>
+            <li><a href="services.html">2D/3D Design & BIM</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <strong>HQ:</strong> 519–520, Laxmi Industrial Estate, Laxmi Mall, New Link Road, Andheri (W), Mumbai – 400053
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <strong>Factory:</strong> Plot A 24/25, MIDC, TTC Area, Kopar Khairane, Navi Mumbai – 400710
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+              (022) 61570554 &nbsp;|&nbsp; +91 98213 10554
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@bnpinteriors.com &nbsp;|&nbsp; tender@bnpinteriors.com
+            </li>
+          </ul>
+        </div>
       </div>
+
       <div class="footer-newsletter">
-        <div class="newsletter-content"><h4>Subscribe to the newsletter</h4><p>Join our newsletter and stay informed with the latest updates in interior design.</p></div>
-        <form class="newsletter-form" id="newsletter-form"><input type="email" placeholder="Enter your email address" required id="newsletter-email"><button type="submit" class="btn btn-primary">Subscribe</button></form>
+        <div class="newsletter-content">
+          <h4>Subscribe to our newsletter</h4>
+          <p>Stay updated on our latest projects, design trends, and studio news.</p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email address..." required id="newsletter-email">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2025 BNP Interiors. All rights reserved. Designed by BNP Interiors</p>
-        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></div>
+        <p>© 2026 BNP Interiors. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
       </div>
     </div>
   </footer>
+
   <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
   <script src="assets/js/main.js"></script>
 </body>
