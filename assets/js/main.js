@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const startAuto = () => {
-      interval = setInterval(() => goTo(current + 1), 6000);
+      interval = setInterval(() => goTo(current + 1), 2800);
     };
 
     const stopAuto = () => clearInterval(interval);
