@@ -2079,3 +2079,8 @@ h6 { font-size: 1.25rem; }
   .footer-grid { grid-template-columns: 1fr; }
   .hero-arrow { display: none; }
 }
+
+@media (max-width: 991px) {
+  .hero-intro-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+}
+
