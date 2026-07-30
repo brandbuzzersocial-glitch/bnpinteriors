@@ -160,7 +160,7 @@ h6 { font-size: 1.25rem; }
 
 /* ============================================================
    AUTHENTIC ARCHITECTURAL & INTERIOR WIREFRAME SKETCHES
-   (Matching User's Reference Screenshots)
+   (High-Visibility Bold Architectural Line Drawings)
    ============================================================ */
 
 /* Disable plain square grid overlay */
@@ -179,7 +179,8 @@ h6 { font-size: 1.25rem; }
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
-  opacity: 0.35;
+  opacity: 0.75;
+  filter: contrast(1.2) brightness(0.92);
   pointer-events: none;
   z-index: 0;
 }
@@ -187,17 +188,19 @@ h6 { font-size: 1.25rem; }
 /* Single right architectural building sketch */
 .sketch-bg-1::before {
   background-image: url('../images/h1-bg01.png');
-  background-position: center right;
-  background-size: 700px auto;
-  opacity: 0.32;
+  background-position: center right -20px;
+  background-size: 720px auto;
+  opacity: 0.75;
+  filter: contrast(1.25);
 }
 
 /* Single left architectural building sketch */
 .sketch-bg-2::before {
   background-image: url('../images/h1-bg02.png');
-  background-position: center left;
-  background-size: 700px auto;
-  opacity: 0.32;
+  background-position: center left -20px;
+  background-size: 720px auto;
+  opacity: 0.75;
+  filter: contrast(1.25);
 }
 
 /* Center full-width architectural wireframe building sketch */
@@ -205,18 +208,18 @@ h6 { font-size: 1.25rem; }
   background-image: url('../images/h1-bg04.png');
   background-position: center center;
   background-size: cover;
-  opacity: 0.28;
+  opacity: 0.70;
 }
 
 /* Deco sketch overlay */
 .sketch-bg-deco::before {
   background-image: url('../images/Deco-contact-2.png');
   background-position: top right;
-  background-size: 450px;
-  opacity: 0.32;
+  background-size: 500px;
+  opacity: 0.75;
 }
 
-/* Dual-sided architectural wireframe building sketches (matching exact reference screenshot 1 & 2) */
+/* Dual-sided architectural wireframe building sketches (High Visibility) */
 .sketch-bg-both {
   position: relative;
 }
@@ -225,10 +228,11 @@ h6 { font-size: 1.25rem; }
   position: absolute;
   inset: 0;
   background-image: url('../images/h1-bg01.png'), url('../images/h1-bg02.png');
-  background-position: center left -40px, center right -40px;
+  background-position: center left -30px, center right -30px;
   background-repeat: no-repeat, no-repeat;
-  background-size: 650px auto, 650px auto;
-  opacity: 0.35;
+  background-size: 680px auto, 680px auto;
+  opacity: 0.78;
+  filter: contrast(1.25) brightness(0.9);
   pointer-events: none;
   z-index: 0;
 }
@@ -238,7 +242,8 @@ h6 { font-size: 1.25rem; }
   background-image: url('../images/about-background-1.png');
   background-position: center center;
   background-size: cover;
-  opacity: 0.38;
+  opacity: 0.75;
+  filter: contrast(1.2);
 }
 
 /* Team & Process architectural wireframe sketch */
@@ -246,18 +251,19 @@ h6 { font-size: 1.25rem; }
   background-image: url('../images/team-deco-bg.png');
   background-position: center center;
   background-size: cover;
-  opacity: 0.35;
+  opacity: 0.75;
+  filter: contrast(1.2);
 }
 
 /* Corner architectural CAD sketch */
 .sketch-bg-corner::before {
   background-image: url('../images/h1-bg01.png');
   background-position: top right;
-  background-size: 550px auto;
-  opacity: 0.32;
+  background-size: 600px auto;
+  opacity: 0.75;
 }
 
-/* Newsletter section architectural wireframe (matching exact reference screenshot) */
+/* Newsletter section architectural wireframe */
 .sketch-bg-newsletter {
   position: relative;
   background-color: #faf9f6 !important;
@@ -269,8 +275,9 @@ h6 { font-size: 1.25rem; }
   background-image: url('../images/h1-bg04.png'), url('../images/h1-bg01.png');
   background-position: center center, center right;
   background-repeat: no-repeat, no-repeat;
-  background-size: cover, 650px auto;
-  opacity: 0.35;
+  background-size: cover, 700px auto;
+  opacity: 0.75;
+  filter: contrast(1.25);
   pointer-events: none;
   z-index: 0;
 }
@@ -281,8 +288,9 @@ h6 { font-size: 1.25rem; }
   background-image: url('../images/h1-bg02.png');
   background-position: center left;
   background-repeat: no-repeat;
-  background-size: 650px auto;
-  opacity: 0.35;
+  background-size: 700px auto;
+  opacity: 0.75;
+  filter: contrast(1.25);
   pointer-events: none;
   z-index: 0;
 }
