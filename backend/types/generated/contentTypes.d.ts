@@ -443,41 +443,6 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
-  collectionName: 'blog_posts';
-  info: {
-    description: 'Articles, industry trends, and project insights';
-    displayName: 'Blog Post';
-    pluralName: 'blog-posts';
-    singularName: 'blog-post';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    author: Schema.Attribute.String & Schema.Attribute.DefaultTo<'BNP Studio'>;
-    category: Schema.Attribute.String;
-    content: Schema.Attribute.RichText;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    excerpt: Schema.Attribute.Text;
-    image: Schema.Attribute.Media<'images'>;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::blog-post.blog-post'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.UID<'title'>;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiContactInquiryContactInquiry
   extends Struct.CollectionTypeSchema {
   collectionName: 'contact_inquiries';
@@ -1175,7 +1140,6 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::blog-post.blog-post': ApiBlogPostBlogPost;
       'api::contact-inquiry.contact-inquiry': ApiContactInquiryContactInquiry;
       'api::hero-slide.hero-slide': ApiHeroSlideHeroSlide;
       'api::project.project': ApiProjectProject;
