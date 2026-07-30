@@ -397,6 +397,7 @@
   </section>
 
   <!-- PORTFOLIO PROJECTS -->
+  <!-- PORTFOLIO PROJECTS -->
   <section class="section sketch-bg sketch-bg-1 blueprint-grid-bg" style="background: var(--color-bg-light)">
     <div class="container">
       <div class="section-header" data-anim="fadeUp">
@@ -407,8 +408,18 @@
         <a href="projects.html" class="btn btn-outline">View All Projects →</a>
       </div>
 
+      <!-- CATEGORY FILTER BUTTONS -->
+      <div style="margin-bottom: 35px; text-align: center;">
+        <ul class="projects-filter" id="projects-filter" style="display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 10px; list-style: none; padding: 0; margin: 0;">
+          <li><button class="filter-btn active" data-filter="all">All Projects</button></li>
+          <li><button class="filter-btn" data-filter="hospitality">Hospitality</button></li>
+          <li><button class="filter-btn" data-filter="commercial">Commercial & Corporate</button></li>
+          <li><button class="filter-btn" data-filter="institutional">Institutional & Healthcare</button></li>
+        </ul>
+      </div>
+
       <div class="projects-grid" data-anim-stagger>
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/project-1-1024x720.jpg" alt="Taj Palace Lucknow" loading="lazy">
             <div class="project-overlay">
@@ -422,7 +433,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/project-4-1024x720.jpg" alt="Taj Gorbandh Palace Jaisalmer" loading="lazy">
             <div class="project-overlay">
@@ -436,7 +447,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-cat="institutional">
           <div class="project-img-wrap">
             <img src="assets/images/project-5-1024x720.jpg" alt="Seva Teerth PMO New Delhi" loading="lazy">
             <div class="project-overlay">
@@ -450,7 +461,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-cat="commercial">
           <div class="project-img-wrap">
             <img src="assets/images/project-6-1024x720.jpg" alt="Motilal Oswal Headquarters" loading="lazy">
             <div class="project-overlay">
@@ -464,7 +475,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-cat="institutional">
           <div class="project-img-wrap">
             <img src="assets/images/project-7-1024x720.jpg" alt="Amrita Hospitals Faridabad" loading="lazy">
             <div class="project-overlay">
@@ -478,7 +489,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/project-9-1024x720.jpg" alt="Taj Amer Jaipur" loading="lazy">
             <div class="project-overlay">

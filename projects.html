@@ -61,10 +61,21 @@
 
   <section class="section sketch-bg sketch-bg-both blueprint-grid-bg">
     <div class="container">
+      
+      <!-- CATEGORY FILTER BUTTONS -->
+      <div style="margin-bottom: 45px; text-align: center;">
+        <ul class="projects-filter" id="projects-filter" style="display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 12px; list-style: none; padding: 0; margin: 0;">
+          <li><button class="filter-btn active" data-filter="all">All Projects</button></li>
+          <li><button class="filter-btn" data-filter="hospitality">Hospitality</button></li>
+          <li><button class="filter-btn" data-filter="commercial">Commercial & Corporate</button></li>
+          <li><button class="filter-btn" data-filter="institutional">Institutional & Healthcare</button></li>
+        </ul>
+      </div>
+
       <div class="projects-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:30px;" data-anim-stagger>
         
         <!-- PROJECT 1 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/project-1-1024x720.jpg" alt="Taj Palace Lucknow" loading="lazy">
           </div>
@@ -76,7 +87,7 @@
         </div>
 
         <!-- PROJECT 2 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/project-4-1024x720.jpg" alt="Taj Gorbandh Palace Jaisalmer" loading="lazy">
           </div>
@@ -88,7 +99,7 @@
         </div>
 
         <!-- PROJECT 3 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/project-5-1024x720.jpg" alt="Taj Amer Jaipur" loading="lazy">
           </div>
@@ -100,7 +111,7 @@
         </div>
 
         <!-- PROJECT 4 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/project-6-1024x720.jpg" alt="Taj Ganga Kutir Raichak" loading="lazy">
           </div>
@@ -112,7 +123,7 @@
         </div>
 
         <!-- PROJECT 5 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/project-7-1024x720.jpg" alt="Taj Puri Resort & Spa" loading="lazy">
           </div>
@@ -124,7 +135,7 @@
         </div>
 
         <!-- PROJECT 6 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/project-9-1024x720.jpg" alt="The Chambers, Taj Mahal Palace" loading="lazy">
           </div>
@@ -136,7 +147,7 @@
         </div>
 
         <!-- PROJECT 7 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/service-1.jpg" alt="Vivanta Bhubaneswar" loading="lazy">
           </div>
@@ -148,7 +159,7 @@
         </div>
 
         <!-- PROJECT 8 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="hospitality">
           <div class="project-img-wrap">
             <img src="assets/images/service-2.jpg" alt="Radisson Jamshedpur" loading="lazy">
           </div>
@@ -160,7 +171,7 @@
         </div>
 
         <!-- PROJECT 9 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="institutional">
           <div class="project-img-wrap">
             <img src="assets/images/service-3.jpg" alt="Seva Teerth PMO New Delhi" loading="lazy">
           </div>
@@ -172,7 +183,7 @@
         </div>
 
         <!-- PROJECT 10 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="institutional">
           <div class="project-img-wrap">
             <img src="assets/images/service-4.jpg" alt="Amrita Hospitals Faridabad" loading="lazy">
           </div>
@@ -184,7 +195,7 @@
         </div>
 
         <!-- PROJECT 11 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="institutional">
           <div class="project-img-wrap">
             <img src="assets/images/service-5.jpg" alt="Dhirubhai Ambani International School" loading="lazy">
           </div>
@@ -196,7 +207,7 @@
         </div>
 
         <!-- PROJECT 12 -->
-        <div class="project-card">
+        <div class="project-card" data-cat="commercial">
           <div class="project-img-wrap">
             <img src="assets/images/service-6.jpg" alt="Motilal Oswal Headquarters" loading="lazy">
           </div>
