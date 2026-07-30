@@ -159,8 +159,8 @@ h6 { font-size: 1.25rem; }
 }
 
 /* ============================================================
-   AUTHENTIC ARCHITECTURAL & INTERIOR WIREFRAME SKETCHES
-   (High-Visibility Bold Architectural Line Drawings)
+   INFINITE EDGE-TO-EDGE UNIQUE ARCHITECTURAL SKETCHES
+   (Generated Unique Sketches Repeating Infinitely Across 100vw)
    ============================================================ */
 
 /* Disable plain square grid overlay */
@@ -170,127 +170,125 @@ h6 { font-size: 1.25rem; }
 
 .sketch-bg {
   position: relative;
+  overflow: hidden;
 }
 
-.sketch-bg::before {
+/* SECTION 1: HERO METRICS SHOWCASE (Infinite Skyscraper Wireframe Sketch) */
+.hero-metrics-section.sketch-bg-metrics::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-repeat: no-repeat;
+  background-image: url('../images/sketch-skyscraper.jpg');
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-size: 800px auto;
+  opacity: 0.28;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* SECTION 2: HERO INTRO TURNKEY SECTION (Infinite Facade & Elevation Sketch) */
+.hero-intro-section.sketch-bg-intro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/sketch-facade.jpg');
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: 750px auto;
+  opacity: 0.25;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* SECTION 3: FOUNDER FEATURE SECTION (Infinite Interior Perspective Sketch) */
+.sketch-bg-founder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/sketch-interior.jpg');
+  background-repeat: repeat-x;
   background-position: center right;
-  background-size: contain;
-  opacity: 0.75;
-  filter: contrast(1.2) brightness(0.92);
+  background-size: 850px auto;
+  opacity: 0.28;
+  mix-blend-mode: multiply;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Single right architectural building sketch */
-.sketch-bg-1::before {
-  background-image: url('../images/h1-bg01.png');
-  background-position: center right -20px;
-  background-size: 720px auto;
-  opacity: 0.75;
-  filter: contrast(1.25);
-}
-
-/* Single left architectural building sketch */
-.sketch-bg-2::before {
-  background-image: url('../images/h1-bg02.png');
-  background-position: center left -20px;
-  background-size: 720px auto;
-  opacity: 0.75;
-  filter: contrast(1.25);
-}
-
-/* Center full-width architectural wireframe building sketch */
-.sketch-bg-4::before {
-  background-image: url('../images/h1-bg04.png');
-  background-position: center center;
-  background-size: cover;
-  opacity: 0.70;
-}
-
-/* Deco sketch overlay */
-.sketch-bg-deco::before {
-  background-image: url('../images/Deco-contact-2.png');
-  background-position: top right;
-  background-size: 500px;
-  opacity: 0.75;
-}
-
-/* Dual-sided architectural wireframe building sketches (High Visibility) */
-.sketch-bg-both {
-  position: relative;
-}
-.sketch-bg-both::before {
+/* SECTION 4: CORE SERVICES VERTICALS 3x2 (Infinite Skyscraper Architectural Sketch) */
+.sketch-bg-services::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('../images/h1-bg01.png'), url('../images/h1-bg02.png');
-  background-position: center left -30px, center right -30px;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 680px auto, 680px auto;
-  opacity: 0.78;
-  filter: contrast(1.25) brightness(0.9);
+  background-image: url('../images/sketch-skyscraper.jpg'), url('../images/h1-bg01.png');
+  background-repeat: repeat-x, no-repeat;
+  background-position: center bottom, center left -50px;
+  background-size: 700px auto, 650px auto;
+  opacity: 0.30;
+  mix-blend-mode: multiply;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Architectural floorplan & CAD line drawing overlay */
-.sketch-bg-floorplan::before {
-  background-image: url('../images/about-background-1.png');
+/* SECTION 5: 4-STAGE METHODOLOGY PROCESS (Infinite CAD Floorplan Blueprint Sketch) */
+.sketch-bg-process::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/sketch-floorplan.jpg');
+  background-repeat: repeat;
   background-position: center center;
-  background-size: cover;
-  opacity: 0.75;
-  filter: contrast(1.2);
+  background-size: 650px auto;
+  opacity: 0.32;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
 }
 
-/* Team & Process architectural wireframe sketch */
-.sketch-bg-team::before {
-  background-image: url('../images/team-deco-bg.png');
+/* SECTION 6: FEATURED PORTFOLIO PROJECTS (Infinite Architectural Facade Sketch) */
+.sketch-bg-projects::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/sketch-facade.jpg'), url('../images/h1-bg02.png');
+  background-repeat: repeat-x, no-repeat;
+  background-position: center top, center right -30px;
+  background-size: 800px auto, 650px auto;
+  opacity: 0.28;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* SECTION 7: CLIENT TESTIMONIALS & ENDORSEMENTS (Infinite Interior Living Sketch) */
+.sketch-bg-testimonials::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/sketch-interior.jpg');
+  background-repeat: repeat-x;
   background-position: center center;
-  background-size: cover;
-  opacity: 0.75;
-  filter: contrast(1.2);
+  background-size: 850px auto;
+  opacity: 0.30;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
 }
 
-/* Corner architectural CAD sketch */
-.sketch-bg-corner::before {
-  background-image: url('../images/h1-bg01.png');
-  background-position: top right;
-  background-size: 600px auto;
-  opacity: 0.75;
-}
-
-/* Newsletter section architectural wireframe */
-.sketch-bg-newsletter {
-  position: relative;
-  background-color: #faf9f6 !important;
-}
+/* SECTION 8: NEWSLETTER PRE-FOOTER (Infinite Skyscraper & Blueprint Combo Sketch) */
 .sketch-bg-newsletter::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('../images/h1-bg04.png'), url('../images/h1-bg01.png');
-  background-position: center center, center right;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, 700px auto;
-  opacity: 0.75;
-  filter: contrast(1.25);
-  pointer-events: none;
-  z-index: 0;
-}
-.sketch-bg-newsletter::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('../images/h1-bg02.png');
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: 700px auto;
-  opacity: 0.75;
-  filter: contrast(1.25);
+  background-image: url('../images/sketch-skyscraper.jpg'), url('../images/sketch-floorplan.jpg');
+  background-repeat: repeat-x, repeat-x;
+  background-position: center bottom, center top;
+  background-size: 700px auto, 600px auto;
+  opacity: 0.28;
+  mix-blend-mode: multiply;
   pointer-events: none;
   z-index: 0;
 }
