@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const startAuto = () => {
-      interval = setInterval(() => goTo(current + 1), 2800);
+      interval = setInterval(() => goTo(current + 1), 6000);
     };
 
     const stopAuto = () => clearInterval(interval);
@@ -235,6 +235,24 @@ document.addEventListener('DOMContentLoaded', () => {
           sec.style.backgroundPositionY = `calc(50% + ${yPos}px)`;
         }
       });
+    }, { passive: true });
+  }
+
+  // ---- Timeline Scroll Progress Bar Animation -----------------
+  const timelineSection = document.getElementById('journey-timeline');
+  const timelineProgressFill = document.getElementById('timeline-progress-fill');
+
+  if (timelineSection && timelineProgressFill) {
+    window.addEventListener('scroll', () => {
+      const rect = timelineSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      if (rect.top < windowHeight && rect.bottom > 0) {
+        const totalHeight = rect.height;
+        const visibleTop = windowHeight - rect.top;
+        const progress = Math.min(Math.max(visibleTop / (totalHeight + windowHeight * 0.3), 0), 1);
+        timelineProgressFill.style.height = `${progress * 100}%`;
+      }
     }, { passive: true });
   }
 

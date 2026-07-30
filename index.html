@@ -50,7 +50,7 @@
           <li><a href="about.html" class="">About Us</a></li>
           <li><a href="services.html" class="">Services</a></li>
           <li><a href="projects.html" class="">Projects</a></li>
-          <li><a href="team.html" class="">Our Team</a></li>
+          <li><a href="media.html" class="">Media & Features</a></li>
           <li><a href="blog.html" class="">Blog</a></li>
           <li><a href="contact.html" class="">Contact Us</a></li>
         </ul>
@@ -64,50 +64,93 @@
     </div>
   </header>
 
-  <!-- HERO SLIDER (PLAIN FAST-MOTION VIDEO REEL) -->
-  <section class="hero">
-    <div class="hero-slider" id="hero-slider">
-      <!-- SLIDE 1 -->
-      <div class="hero-slide active" style="background-image: url('assets/images/hero-video-1.jpg')">
-        <div class="hero-overlay"></div>
-      </div>
-      <!-- SLIDE 2 -->
-      <div class="hero-slide" style="background-image: url('assets/images/hero-video-2.jpg')">
-        <div class="hero-overlay"></div>
-      </div>
-      <!-- SLIDE 3 -->
-      <div class="hero-slide" style="background-image: url('assets/images/hero-video-3.jpg')">
-        <div class="hero-overlay"></div>
-      </div>
-    </div>
+  <!-- CINEMATIC VIDEO HERO BANNER (PURE VIDEO - NO TEXT) -->
+  <section class="hero hero-cinematic">
+    <video autoplay loop muted playsinline id="hero-bg-video" class="hero-video-bg">
+      <source src="assets/images/hero-banner.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-cinematic-overlay"></div>
+  </section>
 
-    <!-- Hero Navigation -->
-    <button class="hero-arrow hero-prev" id="hero-prev" aria-label="Previous slide">‹</button>
-    <button class="hero-arrow hero-next" id="hero-next" aria-label="Next slide">›</button>
+  <!-- HIGH-IMPACT HERO METRICS & LIVE MOTION STATS SHOWCASE -->
+  <section class="hero-metrics-section blueprint-grid-bg">
+    <div class="container">
+      <div class="hero-metrics-grid">
+        <!-- LEFT: BRAND HEADLINE & ACTIONS -->
+        <div class="hero-metrics-copy" data-anim="fadeRight">
+          <span class="hero-metrics-badge">TURNKEY CIVIL & INTERIOR CONTRACTING</span>
+          <h1 class="hero-metrics-title">Crafting <em>Timeless Architecture</em> & Interior Spaces</h1>
+          <p class="hero-metrics-desc">From initial sketch to site execution, we deliver end-to-end civil & bespoke interior solutions across India.</p>
+          <div class="hero-metrics-actions">
+            <a href="projects.html" class="btn btn-primary">Explore Our Projects →</a>
+            <a href="contact.html" class="btn btn-outline" style="border-color: var(--color-secondary); color: var(--color-secondary);">Get Free Consultation</a>
+          </div>
+        </div>
 
-    <div class="hero-dots">
-      <div class="hero-dot active" data-slide="0"></div>
-      <div class="hero-dot" data-slide="1"></div>
-      <div class="hero-dot" data-slide="2"></div>
-    </div>
+        <!-- RIGHT: LIVE MOTION STATISTICAL NUMBERS -->
+        <div class="hero-stats-box" data-anim="fadeLeft">
+          <div class="hero-stats-grid">
+            <div class="hero-stat-card">
+              <div class="stat-num-wrap">
+                <span class="stat-value" data-target="20">0</span><span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-desc">Years of Contracting Excellence</span>
+            </div>
 
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+            <div class="hero-stat-card">
+              <div class="stat-num-wrap">
+                <span class="stat-value" data-target="700">0</span><span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-desc">Projects Delivered Nationwide</span>
+            </div>
+
+            <div class="hero-stat-card">
+              <div class="stat-num-wrap">
+                <span class="stat-value" data-target="35">0</span><span class="stat-suffix">M+</span>
+              </div>
+              <span class="stat-desc">Sq. Ft. Built & Transformed</span>
+            </div>
+
+            <div class="hero-stat-card">
+              <div class="stat-num-wrap">
+                <span class="stat-value" data-target="5000">0</span><span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-desc">Skilled Professionals</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- HERO INTRO SECTION (TEXT BELOW HERO BANNER) -->
+  <!-- HERO INTRO SECTION (IMAGE LEFT, TEXT RIGHT) -->
   <section class="section hero-intro-section blueprint-grid-bg" style="background: var(--color-bg-section); padding: 90px 0 80px;">
     <div class="container">
-      <div class="hero-intro-grid" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center;">
-        <div data-anim="fadeRight">
+      <div class="hero-intro-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+        
+        <!-- LEFT: RELEVANT CRAFTSMANSHIP & MANUFACTURING IMAGE -->
+        <div data-anim="fadeRight" style="position: relative;">
+          <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); box-shadow: 0 16px 36px rgba(0,0,0,0.08); position: relative;">
+            <img src="assets/images/h1-banner01.jpg" alt="BNP Interiors Craftsmanship & Manufacturing" style="width: 100%; height: 440px; object-fit: cover; display: block;">
+            <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(28,28,29,0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 18px 22px; border-radius: 12px; border: 1px solid rgba(202,160,92,0.3); color: #fff;">
+              <span style="display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--color-primary); margin-bottom: 4px;">CRAFTED IN-HOUSE</span>
+              <h4 style="margin: 0; font-size: 1.05rem; color: #fff; font-weight: 700;">Navi Mumbai Precision Manufacturing Facility</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: TURNKEY EXCELLENCE TEXT & BUTTONS -->
+        <div data-anim="fadeLeft">
           <span class="section-tag">TURNKEY CONTRACTING EXCELLENCE</span>
-          <h2 class="section-title" style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); margin-bottom: 20px;">
+          <h2 class="section-title" style="font-size: clamp(2.4rem, 4.2vw, 3.6rem); margin-bottom: 20px; line-height: 1.12;">
             Turnkey <em>Excellence</em>.<br>Since 2006.
           </h2>
-          <p class="section-desc" style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text); margin-bottom: 30px;">
+          <p class="section-desc" style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text); margin-bottom: 22px;">
             From concept to handover, BNP Interiors delivers civil and interior turnkey solutions for India's leading hospitality, commercial, and residential addresses.
+          </p>
+          <p style="font-size: 0.95rem; line-height: 1.7; color: #55555e; margin-bottom: 30px;">
+            Powered by German and Italian precision machinery at our Navi Mumbai facility, every piece of furniture we build leaves factory-finished — ready to assemble on site.
           </p>
           <div style="display: flex; gap: 16px; flex-wrap: wrap;">
             <a href="projects.html" class="btn btn-primary">Explore Our Projects →</a>
@@ -115,72 +158,115 @@
           </div>
         </div>
 
-        <div data-anim="fadeLeft" style="background: var(--color-white); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
-          <span class="section-tag" style="background: var(--color-bg-light);">CRAFTED IN-HOUSE</span>
-          <h3 style="font-size: 1.6rem; margin-bottom: 14px; color: var(--color-secondary);">
-            Crafted <em>In-House</em>. Delivered Nationwide.
-          </h3>
-          <p style="color: var(--color-text); line-height: 1.7; margin-bottom: 24px; font-size: 0.95rem;">
-            Powered by German and Italian precision machinery at our Navi Mumbai facility, every piece of furniture we build leaves factory-finished — ready to assemble on site.
-          </p>
-          <a href="services.html" class="btn btn-dark" style="font-size: 0.85rem; padding: 12px 24px;">See Our Manufacturing →</a>
-        </div>
       </div>
     </div>
   </section>
 
   
 
-  <!-- ABOUT SECTION -->
-  <section class="section sketch-bg sketch-bg-1 blueprint-grid-bg">
+  <!-- FOUNDER & ABOUT SECTION -->
+  <section class="section sketch-bg sketch-bg-1 blueprint-grid-bg" style="padding: 100px 0 90px;">
     <div class="container">
-      <div class="about-grid">
+      <div class="about-grid" style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 70px; align-items: center;">
+        
+        <!-- LEFT: FOUNDER PORTRAIT & BADGES -->
         <div class="about-images" data-anim="fadeRight">
-          <div class="about-img-main">
-            <img src="assets/images/h1-banner01.jpg" alt="BNP Interiors Craftsmanship" loading="lazy">
+          <div class="about-img-main" style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(202, 160, 92, 0.35); box-shadow: 0 24px 48px rgba(0,0,0,0.1);">
+            <img src="assets/images/team-1.jpg" alt="Mr. Punam D. Kularia – Founder & Managing Director" style="width: 100%; height: 520px; object-fit: cover; object-position: top; display: block;">
           </div>
-          <div class="about-img-badge">
-            <img src="assets/images/h1-slider1-280x300.jpg" alt="Interior Detail" loading="lazy">
+          <div class="about-img-badge" style="border-radius: var(--radius-md); overflow: hidden; border: 2px solid var(--color-white); box-shadow: 0 12px 30px rgba(0,0,0,0.15);">
+            <img src="assets/images/h1-slider1-280x300.jpg" alt="Interior Excellence Detail" loading="lazy">
           </div>
-          <div class="about-stat-card">
-            <span class="stat-num">20+</span>
-            <span class="stat-label">Years of<br>Excellence</span>
+          <div class="about-stat-card" style="background: var(--color-primary); color: var(--color-white); padding: 22px 26px; border-radius: var(--radius-md); box-shadow: 0 14px 35px rgba(202, 160, 92, 0.4);">
+            <span class="stat-num" style="color: var(--color-white); font-weight: 800; font-size: 2.3rem;">20+</span>
+            <span class="stat-label" style="color: rgba(255,255,255,0.92); font-weight: 600;">Years of Visionary<br>Leadership</span>
           </div>
         </div>
 
-        <div class="about-content" data-anim="fadeLeft">
-          <span class="section-tag">WHO WE ARE</span>
-          <h2 class="section-title">India's Premier <em>Turnkey Contracting</em> & Interior Studio</h2>
-          <p class="section-desc">BNP Interiors was founded in 2006 by visionary entrepreneur <strong>Mr. Punamchand Kularia</strong>. In just over 18 years, the company has carved a niche in high-end interiors for the hospitality, commercial, and private sectors — built on an unwavering commitment to integrity and transparency. Today, under the leadership of <strong>Punam D. Kularia, Founder & Managing Director</strong>, BNP Interiors is one of India's leading civil and interior turnkey contracting firms, with over 60% of its business coming from repeat clients.</p>
+        <!-- RIGHT: BREATHABLE FOUNDER STORY & NARRATIVE -->
+        <div class="about-content" data-anim="fadeLeft" style="padding-left: 10px;">
+          <span class="section-tag" style="background: var(--color-bg-light); color: var(--color-primary); font-weight: 700; letter-spacing: 3px; font-size: 0.78rem;">FOUNDER & MANAGING DIRECTOR</span>
+          <h2 class="section-title" style="font-size: clamp(2.3rem, 4.2vw, 3.6rem); margin-bottom: 18px; line-height: 1.12; font-weight: 800;">
+            Meet the <em>Leading Force</em> Behind BNP Interiors
+          </h2>
+          <h3 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 24px; font-weight: 700; letter-spacing: 0.5px;">
+            Mr. Punam D. Kularia — Founder & Managing Director
+          </h3>
+          
+          <p class="section-desc" style="font-size: 1.08rem; line-height: 1.85; color: var(--color-text); margin-bottom: 24px; font-weight: 400;">
+            Founded in 2006 under the visionary leadership of <strong>Mr. Punam D. Kularia</strong>, BNP Interiors has grown into one of India’s premier turnkey civil and interior contracting powerhouses. Built on an unwavering foundation of transparency, engineering excellence, and execution integrity, he has directed over <strong>700+ landmark projects</strong> across hospitality, corporate, commercial, and high-end residential sectors nationwide.
+          </p>
 
-          <div class="about-features" data-anim-stagger>
-            <div class="feature-item">
-              <div class="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-              </div>
-              <div class="feature-text">
-                <h3>Complete Turnkey Execution</h3>
-                <p>Civil + Interiors executed under one contract for seamless project delivery and budget optimization.</p>
-              </div>
-            </div>
+          <p style="font-size: 1rem; line-height: 1.8; color: #555560; margin-bottom: 38px;">
+            With a 5,000+ strong workforce and a state-of-the-art Navi Mumbai manufacturing facility equipped with German (HOMAG) and Italian automated machinery, Mr. Kularia continues to steer the firm with a philosophy centered on precision, lasting relationships, and on-time project delivery.
+          </p>
 
-            <div class="feature-item">
-              <div class="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              </div>
-              <div class="feature-text">
-                <h3>In-House Furniture Manufacturing</h3>
-                <p>State-of-the-art Navi Mumbai facility equipped with HOMAG (Germany) machinery for factory-finished precision.</p>
-              </div>
+          <div style="display:flex; gap:24px; align-items:center; flex-wrap:wrap;">
+            <a href="about.html" class="btn btn-primary" style="padding: 14px 32px; font-size: 0.95rem;">Discover Founder's Journey →</a>
+            <div class="experience-badge" style="padding-left: 10px;">
+              <span class="badge-num" style="color: var(--color-primary); font-weight: 800; font-size: 1.5rem;">700+</span>
+              <span class="badge-text" style="font-size: 0.82rem; font-weight: 600; color: #666;">Projects Executed Pan-India</span>
             </div>
           </div>
+        </div>
 
-          <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
-            <a href="about.html" class="btn btn-primary">Discover Our Journey</a>
-            <div class="experience-badge">
-              <span class="badge-num">700+</span>
-              <span class="badge-text">Completed Projects Across India</span>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANIMATED CINEMATIC TIMELINE SECTION -->
+  <section class="section timeline-section blueprint-grid-bg" id="journey-timeline" style="background: #0d0d10; color: #ffffff; padding: 100px 0 105px; border-top: 3px solid var(--color-primary);">
+    <div class="container">
+      <div class="section-header centered" data-anim="fadeUp" style="text-align: center; margin-bottom: 70px;">
+        <span class="section-tag" style="color: var(--color-primary); font-weight: 700; letter-spacing: 3px; background: rgba(202,160,92,0.12); padding: 6px 18px; border-radius: 20px; border: 1px solid rgba(202,160,92,0.25);">MILESTONES OF EXCELLENCE</span>
+        <h2 class="section-title" style="font-size: clamp(2.3rem, 4.2vw, 3.6rem); margin-top: 16px; color: #ffffff;">Our Journey Through The Years</h2>
+        <p class="section-desc" style="max-width: 680px; margin: 16px auto 0; font-size: 1.05rem; color: rgba(255,255,255,0.72); line-height: 1.75;">
+          From our founding in 2006 to delivering 700+ turnkey civil and interior landmarks across India, explore the defining milestones of BNP Interiors.
+        </p>
+      </div>
+
+      <!-- TIMELINE CONTAINER -->
+      <div class="timeline-container" data-anim-stagger>
+        <div class="timeline-track"></div>
+        <div class="timeline-progress-fill" id="timeline-progress-fill"></div>
+        
+        <div class="timeline-item left" data-anim="fadeRight">
+          <div class="timeline-content">
+            <div class="timeline-year-badge">2006</div>
+            <h3>The Inception & First Landmark Win</h3>
+            <p>Founded by Mr. Punamchand Kularia, BNP Interiors launched with a landmark ₹9 crore contract for Shoppers Stop, establishing our core values of transparency and engineering precision.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right" data-anim="fadeLeft">
+          <div class="timeline-content">
+            <div class="timeline-year-badge">2010</div>
+            <h3>Expansion into Commercial & Banking Fit-Outs</h3>
+            <p>Expanded pan-India operations into corporate headquarters and financial banking floors for prestigious clients including HDFC Bank, Citibank, and BNP Paribas.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left" data-anim="fadeRight">
+          <div class="timeline-content">
+            <div class="timeline-year-badge">2015</div>
+            <h3>In-House Precision Factory Launch</h3>
+            <p>Established our state-of-the-art Navi Mumbai manufacturing facility equipped with German (HOMAG) and Italian automated machinery for factory-finished precision furniture.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right" data-anim="fadeLeft">
+          <div class="timeline-content">
+            <div class="timeline-year-badge">2020</div>
+            <h3>Luxury Hospitality Dominance</h3>
+            <p>Scaled turnkey civil and interior fit-out execution across luxury hotel brands including Taj, Marriott, Hyatt, Radisson, Accor, and IHG across India.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left" data-anim="fadeRight">
+          <div class="timeline-content">
+            <div class="timeline-year-badge">2026</div>
+            <h3>700+ Landmark Executions & 35M+ Sq. Ft.</h3>
+            <p>Under the leadership of Mr. Punam D. Kularia, BNP Interiors reaches 700+ completed projects, 35M+ sq. ft. transformed, and a 5,000+ strong workforce with over 60% repeat clients.</p>
           </div>
         </div>
       </div>
@@ -251,34 +337,6 @@
             <svg class="core-service-icon" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="25" cy="25" r="18"/><path d="M25 7v36M7 25h36"/></svg>
           </div>
           <p>Detailed layouts, photorealistic 3D renders, and BIM-based coordination that let clients experience spaces prior to construction.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS NUMBERS -->
-  <section class="stats-section sketch-bg sketch-bg-floorplan blueprint-grid-bg" style="position:relative; z-index:1;">
-    <div class="container">
-      <div class="stats-grid" data-anim-stagger>
-        <div class="stat-item">
-          <span class="stat-value" data-target="20">0</span>
-          <span class="stat-suffix">+</span>
-          <span class="stat-desc">Years of Contracting Excellence</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-value" data-target="700">0</span>
-          <span class="stat-suffix">+</span>
-          <span class="stat-desc">Projects Delivered Nationwide</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-value" data-target="35">0</span>
-          <span class="stat-suffix">M+</span>
-          <span class="stat-desc">Sq. Ft. Built & Transformed</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-value" data-target="5000">0</span>
-          <span class="stat-suffix">+</span>
-          <span class="stat-desc">Skilled Professionals</span>
         </div>
       </div>
     </div>
