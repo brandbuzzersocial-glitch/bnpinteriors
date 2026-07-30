@@ -158,7 +158,16 @@ h6 { font-size: 1.25rem; }
   margin-top: 16px;
 }
 
-/* ---- Architectural Background Sketch Overlay Classes ------ */
+/* ============================================================
+   AUTHENTIC ARCHITECTURAL & INTERIOR WIREFRAME SKETCHES
+   (Matching User's Reference Screenshots)
+   ============================================================ */
+
+/* Disable plain square grid overlay */
+.blueprint-grid-bg::after {
+  display: none !important;
+}
+
 .sketch-bg {
   position: relative;
 }
@@ -170,44 +179,44 @@ h6 { font-size: 1.25rem; }
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
-  opacity: 0.14;
+  opacity: 0.35;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Single right sketch */
+/* Single right architectural building sketch */
 .sketch-bg-1::before {
   background-image: url('../images/h1-bg01.png');
   background-position: center right;
-  background-size: 650px;
-  opacity: 0.16;
+  background-size: 700px auto;
+  opacity: 0.32;
 }
 
-/* Single left sketch */
+/* Single left architectural building sketch */
 .sketch-bg-2::before {
   background-image: url('../images/h1-bg02.png');
   background-position: center left;
-  background-size: 650px;
-  opacity: 0.16;
+  background-size: 700px auto;
+  opacity: 0.32;
 }
 
-/* Center full-width building wireframe sketch */
+/* Center full-width architectural wireframe building sketch */
 .sketch-bg-4::before {
   background-image: url('../images/h1-bg04.png');
   background-position: center center;
   background-size: cover;
-  opacity: 0.12;
+  opacity: 0.28;
 }
 
 /* Deco sketch overlay */
 .sketch-bg-deco::before {
   background-image: url('../images/Deco-contact-2.png');
   background-position: top right;
-  background-size: 420px;
-  opacity: 0.18;
+  background-size: 450px;
+  opacity: 0.32;
 }
 
-/* Dual-sided architectural wireframe sketch (both left & right sides, as in live screenshot) */
+/* Dual-sided architectural wireframe building sketches (matching exact reference screenshot 1 & 2) */
 .sketch-bg-both {
   position: relative;
 }
@@ -216,15 +225,39 @@ h6 { font-size: 1.25rem; }
   position: absolute;
   inset: 0;
   background-image: url('../images/h1-bg01.png'), url('../images/h1-bg02.png');
-  background-position: bottom left, bottom right;
+  background-position: center left -40px, center right -40px;
   background-repeat: no-repeat, no-repeat;
-  background-size: 550px auto, 550px auto;
-  opacity: 0.16;
+  background-size: 650px auto, 650px auto;
+  opacity: 0.35;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Newsletter section light-bg architectural wireframe (matching exact live screenshot) */
+/* Architectural floorplan & CAD line drawing overlay */
+.sketch-bg-floorplan::before {
+  background-image: url('../images/about-background-1.png');
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.38;
+}
+
+/* Team & Process architectural wireframe sketch */
+.sketch-bg-team::before {
+  background-image: url('../images/team-deco-bg.png');
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.35;
+}
+
+/* Corner architectural CAD sketch */
+.sketch-bg-corner::before {
+  background-image: url('../images/h1-bg01.png');
+  background-position: top right;
+  background-size: 550px auto;
+  opacity: 0.32;
+}
+
+/* Newsletter section architectural wireframe (matching exact reference screenshot) */
 .sketch-bg-newsletter {
   position: relative;
   background-color: #faf9f6 !important;
@@ -236,8 +269,8 @@ h6 { font-size: 1.25rem; }
   background-image: url('../images/h1-bg04.png'), url('../images/h1-bg01.png');
   background-position: center center, center right;
   background-repeat: no-repeat, no-repeat;
-  background-size: cover, 600px auto;
-  opacity: 0.18;
+  background-size: cover, 650px auto;
+  opacity: 0.35;
   pointer-events: none;
   z-index: 0;
 }
@@ -248,24 +281,8 @@ h6 { font-size: 1.25rem; }
   background-image: url('../images/h1-bg02.png');
   background-position: center left;
   background-repeat: no-repeat;
-  background-size: 600px auto;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Structural Blueprint Grid Background Overlay */
-.blueprint-grid-bg {
-  position: relative;
-}
-.blueprint-grid-bg::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(to right, rgba(202, 160, 92, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(202, 160, 92, 0.05) 1px, transparent 1px);
-  background-size: 50px 50px;
+  background-size: 650px auto;
+  opacity: 0.35;
   pointer-events: none;
   z-index: 0;
 }
